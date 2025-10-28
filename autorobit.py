@@ -4,8 +4,8 @@ import datetime
 import time
 
 # Dados do usuário
-btc_quantidade = float(input("Quantos BTCs você possui? "))
-preco_compra = float(input("Qual foi o preço de compra por BTC (em R$)? "))
+btc_quantidade = 0.00067938 #float(input("Quantos BTCs você possui? "))
+preco_compra = 613618.29#float(input("Qual foi o preço de compra por BTC (em R$)? "))
 destino = '+5519994012999'  # substitua pelo seu número com DDD
 
 # Configurações

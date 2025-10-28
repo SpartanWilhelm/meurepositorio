@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor BTC</title>
+    <meta http-equiv="refresh" content="60">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Monitoramento de Bitcoin</h1>
+
+    <p>💰 Preço atual do BTC: {{ preco }}</p>
+    <p>🛒 Preço de compra: {{ preco_compra }}</p>
+    <p>📊 Quantidade de BTC: {{ btc }}</p>
+
+    <h2 class="{{ cor_resultado }}">📈 {{ resultado }} estimado: {{ lucro }}</h2>
+
+    <form method="post">
+        <button type="submit">Iniciar Monitoramento</button>
+    </form>
+
+    <p><a href="/logs" target="_blank">🖥️ Ver monitor de logs</a></p>
+</body>
+</html>

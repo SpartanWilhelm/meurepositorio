@@ -5,6 +5,8 @@ import pywhatkit
 import datetime
 import time
 import logging
+import socket
+
 from babel.numbers import format_currency
 
 app = Flask(__name__)
@@ -157,6 +159,8 @@ def index():
 
     ultimo_preco = preco_atual
 
+    # Obtém o IP local do servidor
+    ip_local = socket.gethostbyname(socket.gethostname())
 
     return render_template('index.html',
                        preco=format_currency(preco_atual, 'BRL', locale='pt_BR'),
@@ -165,7 +169,8 @@ def index():
                        lucro=format_currency(abs(lucro_total), 'BRL', locale='pt_BR'),
                        resultado=resultado,
                        cor_resultado=cor_resultado,
-                       direcao_preco=direcao_preco)
+                       direcao_preco=direcao_preco,
+                       ip_local=ip_local)
 
 
 

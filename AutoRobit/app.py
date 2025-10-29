@@ -21,6 +21,8 @@ destino = '+5519994012999'
 variacao = 10000
 intervalo = 60
 historico_precos = []
+ultimo_preco = None
+
 
 # Flags de controle
 alerta_variacao_enviado = False
@@ -122,13 +124,27 @@ def index():
         thread.daemon = True
         thread.start()
 
+    global ultimo_preco
+    direcao_preco = "neutro"    
+
+    if ultimo_preco is not None:
+        if preco_atual > ultimo_preco:
+            direcao_preco = "positivo"
+        elif preco_atual < ultimo_preco:
+            direcao_preco = "negativo"
+
+    ultimo_preco = preco_atual
+
+
     return render_template('index.html',
-                           preco=format_currency(preco_atual, 'BRL', locale='pt_BR'),
-                           preco_compra=format_currency(preco_compra, 'BRL', locale='pt_BR'),
-                           btc=f"{btc_quantidade:.8f}",
-                           lucro=format_currency(abs(lucro_total), 'BRL', locale='pt_BR'),
-                           resultado=resultado,
-                           cor_resultado=cor_resultado)
+                       preco=format_currency(preco_atual, 'BRL', locale='pt_BR'),
+                       preco_compra=format_currency(preco_compra, 'BRL', locale='pt_BR'),
+                       btc=f"{btc_quantidade:.8f}",
+                       lucro=format_currency(abs(lucro_total), 'BRL', locale='pt_BR'),
+                       resultado=resultado,
+                       cor_resultado=cor_resultado,
+                       direcao_preco=direcao_preco)
+
 
 
 @app.route('/logs')

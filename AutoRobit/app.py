@@ -59,6 +59,28 @@ def verificar_tendencia():
         return True, "🔽 Tendência de queda detectada: 8 ou mais quedas consecutivas."
     return False, None
 
+def estilo_por_tendencia():
+    if len(historico_precos) < 2:
+        return "black", None
+
+    subidas = sum(historico_precos[i] > historico_precos[i - 1] for i in range(1, len(historico_precos)))
+    quedas = sum(historico_precos[i] < historico_precos[i - 1] for i in range(1, len(historico_precos)))
+
+    intensidade = min(max(subidas, quedas), 8)  # entre 1 e 8
+
+    if subidas >= quedas and subidas >= 1:
+        cor = f"rgb(0,{intensidade * 30},0)"  # verde progressivo
+        mensagem = "🚀 Tendência forte de alta!" if subidas == 8 else None
+    elif quedas > subidas and quedas >= 1:
+        cor = f"rgb({intensidade * 30},0,0)"  # vermelho progressivo
+        mensagem = "⚠️ Tendência forte de queda!" if quedas == 8 else None
+    else:
+        cor = "black"
+        mensagem = None
+
+    return cor, mensagem
+
+
 def monitorar():
     global alerta_variacao_enviado, alerta_tendencia_enviado, monitorando
     monitorando = True

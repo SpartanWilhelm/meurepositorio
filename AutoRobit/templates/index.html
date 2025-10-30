@@ -16,6 +16,12 @@
 
     <h2 class="{{ cor_resultado }}">📈 {{ resultado }} estimado: {{ lucro }}</h2>
 
+    {% if mensagem_variacao %}
+        <div style="background-color: {{ cor_variacao }}; color: white; padding: 15px; margin-top: 20px; border-radius: 8px;">
+            {{ mensagem_variacao }}
+        </div>
+    {% endif %}
+
     <form method="post">
         <button type="submit">Iniciar Monitoramento</button>
     </form>
@@ -25,5 +31,4 @@
 <footer>
     <p>Servidor: {{ ip_local }}:5000</p>
 </footer>
-
 </html>

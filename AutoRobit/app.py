@@ -6,7 +6,6 @@ import datetime
 import time
 import logging
 import socket
-
 from babel.numbers import format_currency
 
 app = Flask(__name__)
@@ -25,11 +24,12 @@ intervalo = 60
 historico_precos = []
 ultimo_preco = None
 
-
-# Flags de controle
+# Flags e mensagens
 alerta_variacao_enviado = False
 alerta_tendencia_enviado = False
 monitorando = False
+mensagem_variacao_html = None
+cor_variacao_html = None
 
 def obter_preco():
     try:
@@ -68,13 +68,13 @@ def estilo_por_tendencia():
     subidas = sum(historico_precos[i] > historico_precos[i - 1] for i in range(1, len(historico_precos)))
     quedas = sum(historico_precos[i] < historico_precos[i - 1] for i in range(1, len(historico_precos)))
 
-    intensidade = min(max(subidas, quedas), 8)  # entre 1 e 8
+    intensidade = min(max(subidas, quedas), 8)
 
     if subidas >= quedas and subidas >= 1:
-        cor = f"rgb(0,{intensidade * 30},0)"  # verde progressivo
+        cor = f"rgb(0,{intensidade * 30},0)"
         mensagem = "🚀 Tendência forte de alta!" if subidas == 8 else None
     elif quedas > subidas and quedas >= 1:
-        cor = f"rgb({intensidade * 30},0,0)"  # vermelho progressivo
+        cor = f"rgb({intensidade * 30},0,0)"
         mensagem = "⚠️ Tendência forte de queda!" if quedas == 8 else None
     else:
         cor = "black"
@@ -82,14 +82,19 @@ def estilo_por_tendencia():
 
     return cor, mensagem
 
-
 def monitorar():
     global alerta_variacao_enviado, alerta_tendencia_enviado, monitorando
+    global mensagem_variacao_html, cor_variacao_html
+
     monitorando = True
     logging.info("Monitoramento iniciado.")
 
     while monitorando:
         preco_atual = obter_preco()
+        if preco_atual is None:
+            time.sleep(intervalo)
+            continue
+
         historico_precos.append(preco_atual)
         if len(historico_precos) > 10:
             historico_precos.pop(0)
@@ -102,21 +107,26 @@ def monitorar():
         if not alerta_variacao_enviado:
             if diferenca >= variacao:
                 mensagem = (
-                    f"🚨 O Bitcoin subiu R${diferenca:.2f} desde sua compra!\n"
-                    f"Preço atual: R${preco_atual:.2f}\n"
+                    f"🚨 O Bitcoin subiu R${format_currency(diferenca, 'BRL', locale='pt_BR')} desde sua compra!\n"
+                    f"Preço atual: R${format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
                     f"{resultado} estimado: {valor_formatado}\n"
                     f"Considere vender."
                 )
                 enviar_alerta(mensagem)
+                mensagem_variacao_html = mensagem
+                cor_variacao_html = "green"
                 alerta_variacao_enviado = True
+
             elif diferenca <= -variacao:
                 mensagem = (
-                    f"📉 O Bitcoin caiu R${abs(diferenca):.2f} desde sua compra!\n"
-                    f"Preço atual: R${preco_atual:.2f}\n"
+                    f"📉 O Bitcoin caiu R${format_currency(abs(diferenca), 'BRL', locale='pt_BR')} desde sua compra!\n"
+                    f"Preço atual: R${format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
                     f"{resultado} estimado: {valor_formatado}\n"
                     f"Pode ser hora de comprar."
                 )
                 enviar_alerta(mensagem)
+                mensagem_variacao_html = mensagem
+                cor_variacao_html = "red"
                 alerta_variacao_enviado = True
 
         if not alerta_tendencia_enviado:
@@ -149,7 +159,7 @@ def index():
         thread.start()
 
     global ultimo_preco
-    direcao_preco = "neutro"    
+    direcao_preco = "neutro"
 
     if ultimo_preco is not None:
         if preco_atual > ultimo_preco:
@@ -159,20 +169,22 @@ def index():
 
     ultimo_preco = preco_atual
 
-    # Obtém o IP local do servidor
+    cor_tendencia, mensagem_tendencia = estilo_por_tendencia()
     ip_local = socket.gethostbyname(socket.gethostname())
 
     return render_template('index.html',
-                       preco=format_currency(preco_atual, 'BRL', locale='pt_BR'),
-                       preco_compra=format_currency(preco_compra, 'BRL', locale='pt_BR'),
-                       btc=f"{btc_quantidade:.8f}",
-                       lucro=format_currency(abs(lucro_total), 'BRL', locale='pt_BR'),
-                       resultado=resultado,
-                       cor_resultado=cor_resultado,
-                       direcao_preco=direcao_preco,
-                       ip_local=ip_local)
-
-
+                           preco=format_currency(preco_atual, 'BRL', locale='pt_BR'),
+                           preco_compra=format_currency(preco_compra, 'BRL', locale='pt_BR'),
+                           btc=f"{btc_quantidade:.8f}",
+                           lucro=format_currency(abs(lucro_total), 'BRL', locale='pt_BR'),
+                           resultado=resultado,
+                           cor_resultado=cor_resultado,
+                           direcao_preco=direcao_preco,
+                           ip_local=ip_local,
+                           cor_tendencia=cor_tendencia,
+                           mensagem_tendencia=mensagem_tendencia,
+                           mensagem_variacao=mensagem_variacao_html,
+                           cor_variacao=cor_variacao_html)
 
 @app.route('/logs')
 def logs():
@@ -183,8 +195,6 @@ def logs():
     except Exception as e:
         return f"Erro ao ler o log: {e}"
 
-
 if __name__ == '__main__':
     logging.info("Servidor Flask iniciado...")
     app.run(host='0.0.0.0', port=5000, debug=True)
-

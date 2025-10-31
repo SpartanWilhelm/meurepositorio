@@ -6,6 +6,7 @@ import datetime
 import time
 import logging
 import socket
+import configparser
 from babel.numbers import format_currency
 
 app = Flask(__name__)
@@ -13,10 +14,14 @@ app = Flask(__name__)
 # Configuração de log
 logging.basicConfig(filename='log.txt', level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# Dados do usuário
-btc_quantidade = 0.00067938
-preco_compra = 613618.29
-destino = '+5519994012999'
+# Leitura do arquivo de configuração
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+# Dados do usuário (lidos do arquivo)
+destino = config.get('usuario', 'telefone')
+preco_compra = float(config.get('usuario', 'preco_compra'))
+btc_quantidade = float(config.get('usuario', 'btc_quantidade'))
 
 # Configurações
 variacao = 10000
@@ -107,8 +112,8 @@ def monitorar():
         if not alerta_variacao_enviado:
             if diferenca >= variacao:
                 mensagem = (
-                    f"🚨 O Bitcoin subiu R${format_currency(diferenca, 'BRL', locale='pt_BR')} desde sua compra!\n"
-                    f"Preço atual: R${format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
+                    f"🚨 O Bitcoin subiu {format_currency(diferenca, 'BRL', locale='pt_BR')} desde sua compra!\n"
+                    f"Preço atual: {format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
                     f"{resultado} estimado: {valor_formatado}\n"
                     f"Considere vender."
                 )
@@ -119,8 +124,8 @@ def monitorar():
 
             elif diferenca <= -variacao:
                 mensagem = (
-                    f"📉 O Bitcoin caiu R${format_currency(abs(diferenca), 'BRL', locale='pt_BR')} desde sua compra!\n"
-                    f"Preço atual: R${format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
+                    f"📉 O Bitcoin caiu {format_currency(abs(diferenca), 'BRL', locale='pt_BR')} desde sua compra!\n"
+                    f"Preço atual: {format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
                     f"{resultado} estimado: {valor_formatado}\n"
                     f"Pode ser hora de comprar."
                 )
@@ -134,7 +139,7 @@ def monitorar():
             if tendencia_detectada:
                 mensagem = (
                     f"{mensagem_tendencia}\n"
-                    f"Preço atual: R${preco_atual:.2f}\n"
+                    f"Preço atual: {format_currency(preco_atual, 'BRL', locale='pt_BR')}\n"
                     f"{resultado} estimado: {valor_formatado}"
                 )
                 enviar_alerta(mensagem)

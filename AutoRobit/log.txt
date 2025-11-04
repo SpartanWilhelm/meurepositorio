@@ -73,3 +73,38 @@ Pode ser hora de comprar.
 2025-11-04 13:27:30,903 - Gráfico não gerado: histórico insuficiente.
 2025-11-04 13:27:32,683 - Monitoramento iniciado.
 2025-11-04 13:27:32,683 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:28:33,111 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:29:01,116 - Mensagem agendada: 📉 O Bitcoin caiu R$ 60.341,29 desde sua compra!
+Preço atual: R$ 553.277,00
+📉 Prejuízo estimado: R$ 40,99
+Pode ser hora de comprar.
+2025-11-04 13:29:33,560 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:30:34,213 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:31:34,881 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:32:35,514 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:38:05,962 - Servidor Flask iniciado...
+2025-11-04 13:38:07,333 - Servidor Flask iniciado...
+2025-11-04 13:38:08,098 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:38:10,150 - Monitoramento iniciado.
+2025-11-04 13:38:10,150 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:39:10,622 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:40:00,627 - Mensagem agendada: 📉 O Bitcoin caiu R$ 60.866,29 desde sua compra!
+Preço atual: R$ 552.752,00
+📉 Prejuízo estimado: R$ 41,35
+Pode ser hora de comprar.
+2025-11-04 13:40:11,084 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:41:11,767 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:42:12,428 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:43:13,032 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:44:42,855 - Servidor Flask iniciado...
+2025-11-04 13:44:44,203 - Servidor Flask iniciado...
+2025-11-04 13:44:46,362 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:44:47,943 - Monitoramento iniciado.
+2025-11-04 13:44:47,943 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:45:48,420 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:46:00,391 - Mensagem agendada: 📉 O Bitcoin caiu R$ 60.529,29 desde sua compra!
+Preço atual: R$ 553.089,00
+📉 Prejuízo estimado: R$ 41,12
+Pode ser hora de comprar.
+2025-11-04 13:46:48,863 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:47:17,106 - Servidor Flask iniciado...

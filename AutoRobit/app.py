@@ -7,6 +7,8 @@ import time
 import logging
 import socket
 import configparser
+import matplotlib
+matplotlib.use('Agg')  # Usa backend sem interface gráfica
 import matplotlib.pyplot as plt
 from babel.numbers import format_currency
 

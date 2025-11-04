@@ -7,12 +7,19 @@ import time
 import logging
 import socket
 import configparser
+import matplotlib.pyplot as plt
 from babel.numbers import format_currency
 
 app = Flask(__name__)
 
 # Configuração de log
-logging.basicConfig(filename='log.txt', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(
+    filename='log.txt',
+    level=logging.INFO,
+    format='%(asctime)s - %(message)s',
+    encoding='utf-8'
+)
+
 
 # Leitura do arquivo de configuração
 config = configparser.ConfigParser()
@@ -147,6 +154,36 @@ def monitorar():
 
         time.sleep(intervalo)
 
+import os
+
+def gerar_grafico_variacao():
+    try:
+        if len(historico_precos) < 2:
+            logging.info("Gráfico não gerado: histórico insuficiente.")
+            return None
+
+        # Garante que a pasta static existe
+        os.makedirs('static', exist_ok=True)
+
+        caminho = os.path.join('static', 'variacao.png')
+
+        plt.figure(figsize=(10, 5))
+        plt.plot(historico_precos, marker='o', linestyle='-', color='blue')
+        plt.title('Variação do Preço do Bitcoin')
+        plt.xlabel('Últimas medições')
+        plt.ylabel('Preço (BRL)')
+        plt.grid(True)
+        plt.tight_layout()
+        plt.savefig(caminho)
+        plt.close()
+
+        logging.info(f"Gráfico gerado com sucesso em: {caminho}")
+        return caminho
+    except Exception as e:
+        logging.error(f"Erro ao gerar gráfico: {e}")
+        return None
+
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     preco_atual = obter_preco()
@@ -176,6 +213,8 @@ def index():
 
     cor_tendencia, mensagem_tendencia = estilo_por_tendencia()
     ip_local = socket.gethostbyname(socket.gethostname())
+    grafico_path = gerar_grafico_variacao()
+
 
     return render_template('index.html',
                            preco=format_currency(preco_atual, 'BRL', locale='pt_BR'),
@@ -189,7 +228,9 @@ def index():
                            cor_tendencia=cor_tendencia,
                            mensagem_tendencia=mensagem_tendencia,
                            mensagem_variacao=mensagem_variacao_html,
-                           cor_variacao=cor_variacao_html)
+                           cor_variacao=cor_variacao_html,
+                           grafico=grafico_path
+)
 
 @app.route('/logs')
 def logs():

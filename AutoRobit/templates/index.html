@@ -15,6 +15,11 @@
     <p>📊 Quantidade de BTC: {{ btc }}</p>
 
     <h2 class="{{ cor_resultado }}">📈 {{ resultado }} estimado: {{ lucro }}</h2>
+    {% if grafico %}
+        <h3>Gráfico de Variação</h3>
+        <img src="{{ grafico }}" alt="Gráfico de Variação" style="max-width:100%; height:auto;">
+    {% endif %}
+
 
     {% if mensagem_variacao %}
         <div style="background-color: {{ cor_variacao }}; color: white; padding: 15px; margin-top: 20px; border-radius: 8px;">

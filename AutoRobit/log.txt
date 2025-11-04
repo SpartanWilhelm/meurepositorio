@@ -108,3 +108,22 @@ Preço atual: R$ 553.089,00
 Pode ser hora de comprar.
 2025-11-04 13:46:48,863 - Gráfico não gerado: histórico insuficiente.
 2025-11-04 13:47:17,106 - Servidor Flask iniciado...
+2025-11-04 13:47:31,416 - Servidor Flask iniciado...
+2025-11-04 13:47:49,315 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:47:55,298 - Servidor Flask iniciado...
+2025-11-04 13:47:57,860 - Servidor Flask iniciado...
+2025-11-04 13:47:58,648 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:48:00,440 - Monitoramento iniciado.
+2025-11-04 13:48:00,441 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:49:00,889 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:50:00,913 - Mensagem agendada: 📉 O Bitcoin caiu R$ 60.964,29 desde sua compra!
+Preço atual: R$ 552.654,00
+📉 Prejuízo estimado: R$ 41,42
+Pode ser hora de comprar.
+2025-11-04 13:50:01,334 - Gráfico não gerado: histórico insuficiente.
+2025-11-04 13:51:01,964 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:52:02,585 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:53:03,165 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:54:03,759 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:55:04,359 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-04 13:56:04,911 - Gráfico gerado com sucesso em: static\variacao.png

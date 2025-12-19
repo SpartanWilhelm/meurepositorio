@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Decisor de Compra</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/finance.css') }}">
 </head>
 <body>
 
-<!-- 🔐 Barra superior simples -->
-<div>
-    Usuário logado: <strong>{{ current_user.id }}</strong>
-    |
+<div class="top-bar">
+    <span>👤 Usuário: <strong>{{ current_user.id }}</strong></span>
     <a href="{{ url_for('auth.logout') }}">Sair</a>
 </div>
 
-<hr>
-
 <h2>Decisor de Compra – Score Barsi</h2>
 
-<table border="1" cellpadding="6">
+<table>
     <tr>
         <th>Ticker</th>
         <th>Preço Atual</th>
@@ -37,18 +35,25 @@
     {% for s in stocks %}
     <tr>
         <td>{{ s.ticker }}</td>
-        <td>{{ s.price if s.price else "N/A" }}</td>
+        <td>{{ s.price or "N/A" }}</td>
         <td>{{ s.pl }}</td>
         <td>{{ "%.2f"|format(s.pl_medio) if s.pl_medio else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.dy * 100) if s.dy else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.dy_medio * 100) if s.dy_medio else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.payout * 100) if s.payout else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.roe * 100) if s.roe else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.roic * 100) if s.roic else "N/A" }}</td>
-        <td>{{ s.divida_ebitda if s.divida_ebitda is not none else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.dy*100) if s.dy else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.dy_medio*100) if s.dy_medio else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.payout*100) if s.payout else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.roe*100) if s.roe else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.roic*100) if s.roic else "N/A" }}</td>
+        <td>{{ s.divida_ebitda or "N/A" }}</td>
         <td>{{ s.anos_dividendos }}</td>
-        <td><strong>{{ s.score }}</strong></td>
-        <td><strong>{{ s.status }}</strong></td>
+        <td class="score">{{ s.score }}</td>
+
+        {% if "Comprar" in s.status and "aos poucos" not in s.status %}
+            <td class="status-buy">{{ s.status }}</td>
+        {% elif "aos poucos" in s.status %}
+            <td class="status-hold">{{ s.status }}</td>
+        {% else %}
+            <td class="status-wait">{{ s.status }}</td>
+        {% endif %}
     </tr>
     {% endfor %}
 </table>

@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>PyInvest</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/finance.css') }}">
-</head>
-<body>
+{% block title %}PyInvest – Score Barsi{% endblock %}
 
-<div class="top-bar">
-    <span>👤 Usuário: <strong>{{ current_user.id }}</strong></span>
-    <a href="{{ url_for('auth.logout') }}">Sair</a>
-</div>
+{% block content %}
 
 <h2>PyInvest – Score Barsi</h2>
 
@@ -36,15 +27,98 @@
     <tr>
         <td>{{ s.ticker }}</td>
         <td>{{ s.price or "N/A" }}</td>
-        <td>{{ s.pl }}</td>
+
+        {# ================= P/L ================= #}
+        {% if s.pl and s.pl_medio %}
+            {% if s.pl <= s.pl_medio * 0.9 %}
+                <td class="indicator green">{{ s.pl }}</td>
+            {% elif s.pl <= s.pl_medio * 1.1 %}
+                <td class="indicator yellow">{{ s.pl }}</td>
+            {% else %}
+                <td class="indicator red">{{ s.pl }}</td>
+            {% endif %}
+        {% else %}
+            <td>N/A</td>
+        {% endif %}
+
         <td>{{ "%.2f"|format(s.pl_medio) if s.pl_medio else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.dy*100) if s.dy else "N/A" }}</td>
+
+        {# ================= DY ================= #}
+        {% if s.dy and s.dy_medio %}
+            {% if s.dy >= s.dy_medio %}
+                <td class="indicator green">{{ "%.2f%%"|format(s.dy*100) }}</td>
+            {% elif s.dy >= s.dy_medio * 0.8 %}
+                <td class="indicator yellow">{{ "%.2f%%"|format(s.dy*100) }}</td>
+            {% else %}
+                <td class="indicator red">{{ "%.2f%%"|format(s.dy*100) }}</td>
+            {% endif %}
+        {% else %}
+            <td>N/A</td>
+        {% endif %}
+
         <td>{{ "%.2f%%"|format(s.dy_medio*100) if s.dy_medio else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.payout*100) if s.payout else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.roe*100) if s.roe else "N/A" }}</td>
-        <td>{{ "%.2f%%"|format(s.roic*100) if s.roic else "N/A" }}</td>
-        <td>{{ s.divida_ebitda or "N/A" }}</td>
-        <td>{{ s.anos_dividendos }}</td>
+
+        {# ================= PAYOUT ================= #}
+        {% if s.payout %}
+            {% if s.payout >= 0.3 and s.payout <= 0.7 %}
+                <td class="indicator green">{{ "%.2f%%"|format(s.payout*100) }}</td>
+            {% elif s.payout <= 0.9 %}
+                <td class="indicator yellow">{{ "%.2f%%"|format(s.payout*100) }}</td>
+            {% else %}
+                <td class="indicator red">{{ "%.2f%%"|format(s.payout*100) }}</td>
+            {% endif %}
+        {% else %}
+            <td>N/A</td>
+        {% endif %}
+
+        {# ================= ROE ================= #}
+        {% if s.roe %}
+            {% if s.roe >= 0.15 %}
+                <td class="indicator green">{{ "%.2f%%"|format(s.roe*100) }}</td>
+            {% elif s.roe >= 0.10 %}
+                <td class="indicator yellow">{{ "%.2f%%"|format(s.roe*100) }}</td>
+            {% else %}
+                <td class="indicator red">{{ "%.2f%%"|format(s.roe*100) }}</td>
+            {% endif %}
+        {% else %}
+            <td>N/A</td>
+        {% endif %}
+
+        {# ================= ROIC ================= #}
+        {% if s.roic %}
+            {% if s.roic >= 0.12 %}
+                <td class="indicator green">{{ "%.2f%%"|format(s.roic*100) }}</td>
+            {% elif s.roic >= 0.08 %}
+                <td class="indicator yellow">{{ "%.2f%%"|format(s.roic*100) }}</td>
+            {% else %}
+                <td class="indicator red">{{ "%.2f%%"|format(s.roic*100) }}</td>
+            {% endif %}
+        {% else %}
+            <td>N/A</td>
+        {% endif %}
+
+        {# ================= DÍVIDA / EBITDA ================= #}
+        {% if s.divida_ebitda %}
+            {% if s.divida_ebitda <= 2.5 %}
+                <td class="indicator green">{{ s.divida_ebitda }}</td>
+            {% elif s.divida_ebitda <= 3.5 %}
+                <td class="indicator yellow">{{ s.divida_ebitda }}</td>
+            {% else %}
+                <td class="indicator red">{{ s.divida_ebitda }}</td>
+            {% endif %}
+        {% else %}
+            <td>N/A</td>
+        {% endif %}
+
+        {# ================= ANOS DIVIDENDOS ================= #}
+        {% if s.anos_dividendos >= 10 %}
+            <td class="indicator green">{{ s.anos_dividendos }}</td>
+        {% elif s.anos_dividendos >= 5 %}
+            <td class="indicator yellow">{{ s.anos_dividendos }}</td>
+        {% else %}
+            <td class="indicator red">{{ s.anos_dividendos }}</td>
+        {% endif %}
+
         <td class="score">{{ s.score }}</td>
 
         {% if "Comprar" in s.status and "aos poucos" not in s.status %}
@@ -58,5 +132,4 @@
     {% endfor %}
 </table>
 
-</body>
-</html>
+{% endblock %}

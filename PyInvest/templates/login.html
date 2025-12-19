@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Login | PyInvest</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<h2>Login - PyInvest</h2>
+{% block title %}Login – PyInvest{% endblock %}
 
-<form method="post">
-    <label>Usuário:</label><br>
-    <input type="text" name="username" required><br><br>
+{% block content %}
 
-    <label>Senha:</label><br>
-    <input type="password" name="password" required><br><br>
+<h2>Login</h2>
+
+<form method="post" class="form-box">
+    <label>Usuário</label>
+    <input type="text" name="username" required>
+
+    <label>Senha</label>
+    <input type="password" name="password" required>
 
     <button type="submit">Entrar</button>
 </form>
 
-<p>
-    Não tem conta?
-    <a href="{{ url_for('auth.register') }}">Cadastrar</a>
-</p>
+{% endblock %}
 
-</body>
-</html>

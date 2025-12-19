@@ -72,7 +72,37 @@ td:first-child {
     font-weight: 600;
 }
 
-/* Status */
+/* ========================= */
+/* 🎯 INDICADORES (NOVO)     */
+/* ========================= */
+
+.indicator {
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Verde — bom */
+.indicator.green {
+    background-color: #e6f4ea;
+    color: #15803d;
+}
+
+/* Amarelo — atenção */
+.indicator.yellow {
+    background-color: #fff7e0;
+    color: #ca8a04;
+}
+
+/* Vermelho — risco */
+.indicator.red {
+    background-color: #fdecea;
+    color: #b91c1c;
+}
+
+/* ========================= */
+/* Status final              */
+/* ========================= */
+
 .status-buy {
     color: #15803d;
     font-weight: bold;
@@ -99,3 +129,46 @@ td:first-child {
         font-size: 12px;
     }
 }
+
+/* ========================= */
+/* Formulários               */
+/* ========================= */
+
+.form-box {
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-box label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.form-box button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #1f7ae0;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #155ec0;
+}
+

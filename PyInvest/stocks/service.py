@@ -24,7 +24,7 @@ def dashboard():
 
     for ticker in tickers:
         # -----------------------------
-        # Dados fundamentalistas (CSV)
+        # Fundamentais (CSV)
         # -----------------------------
         df = load_stock_csv(ticker)
         fund = calcular_fundamentos_csv(df)
@@ -36,7 +36,7 @@ def dashboard():
         price = yahoo.get("price")
 
         # -----------------------------
-        # Camada 1 — Análise de preço
+        # Camada 1 — Preço (timing)
         # -----------------------------
         price_info = analisar_preco(ticker)
 
@@ -53,9 +53,10 @@ def dashboard():
         status = status_final(score)
 
         # -----------------------------
-        # Cores
+        # Cores dos indicadores
         # -----------------------------
         colors = {
+            "price": price_info["price_color"],
             "pl": color_pl(fund["pl"], fund["pl_medio"]),
             "dy": color_dy(fund["dy"], fund["dy_medio"], is_commodity),
             "payout": color_payout(fund["payout"], setor),
@@ -63,13 +64,11 @@ def dashboard():
             "roic": color_roic(fund["roic"]),
             "divida": color_divida(fund["divida_ebitda"], setor),
             "dividendos": color_dividendos(fund["anos_dividendos"]),
-            "price": price_info["price_color"]
         }
 
         resultados.append({
             "ticker": ticker,
             "price": round(price, 2) if price else None,
-            "price_status": price_info["price_status"],
             **fund,
             "colors": colors,
             "score": score,
@@ -81,4 +80,3 @@ def dashboard():
         stocks=resultados,
         current_user=current_user
     )
-

@@ -10,7 +10,6 @@
     <tr>
         <th>Ticker</th>
         <th>Preço Atual</th>
-        <th>Momento do Preço</th>
         <th>P/L</th>
         <th>P/L Médio</th>
         <th>DY</th>
@@ -28,12 +27,11 @@
     <tr>
         <td>{{ s.ticker }}</td>
 
-        <td>{{ s.price or "N/A" }}</td>
-
-        {# ===== Camada 1 — Momento do preço ===== #}
+        {# ===== PREÇO (Camada 1) ===== #}
         <td class="indicator {{ s.colors.price }}">
-            {{ s.price_status|capitalize }}
+            {{ s.price or "N/A" }}
         </td>
+
 
         {# ===== P/L ===== #}
         <td class="indicator {{ s.colors.pl }}">

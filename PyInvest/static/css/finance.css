@@ -171,4 +171,37 @@ td:first-child {
 .form-box button:hover {
     background-color: #155ec0;
 }
+/* =========================
+   Indicadores (cores)
+   ========================= */
+
+.indicator {
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+/* Verde → bom */
+.indicator.green {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Amarelo → atenção */
+.indicator.yellow {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+/* Vermelho → alerta */
+.indicator.red {
+    background-color: #fee2e2;
+    color: #7f1d1d;
+}
+
+/* Neutro / indefinido */
+.indicator.neutral {
+    background-color: #e5e7eb;
+    color: #374151;
+}
 

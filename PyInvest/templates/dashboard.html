@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Dashboard de Ações</h2>
+
+  <table border="1">
+    <tr>
+      <th>Ticker</th>
+      <th>Preço</th>
+      <th>P/L</th>
+      <th>ROE</th>
+    </tr>
+
+    {% for s in stocks %}
+    <tr>
+      <td>{{ s.ticker }}</td>
+      <td>{{ s.price }}</td>
+      <td>{{ s.pl }}</td>
+      <td>{{ s.roe }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <a href="/logout">Sair</a>
+</body>
+</html>

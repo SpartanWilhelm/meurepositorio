@@ -127,3 +127,194 @@ Pode ser hora de comprar.
 2025-11-04 13:54:03,759 - Gráfico gerado com sucesso em: static\variacao.png
 2025-11-04 13:55:04,359 - Gráfico gerado com sucesso em: static\variacao.png
 2025-11-04 13:56:04,911 - Gráfico gerado com sucesso em: static\variacao.png
+2025-11-16 13:59:11,975 - Servidor Flask iniciado...
+2025-11-16 13:59:14,202 - Servidor Flask iniciado...
+2025-11-16 13:59:23,776 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:00:25,959 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:01:28,403 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:02:29,728 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:03:30,980 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:04:32,405 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:05:33,729 - Gráfico não gerado: histórico insuficiente.
+2025-11-16 14:06:35,157 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:20:34,531 - Servidor Flask iniciado...
+2025-12-01 15:20:38,068 - Servidor Flask iniciado...
+2025-12-01 15:20:41,880 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:21:37,149 - Monitoramento iniciado.
+2025-12-01 15:21:37,150 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:21:41,366 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:21:45,380 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:21:49,077 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:22:00,443 - Servidor Flask iniciado...
+2025-12-01 15:22:03,823 - Servidor Flask iniciado...
+2025-12-01 15:22:05,419 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:22:33,219 - Monitoramento iniciado.
+2025-12-01 15:22:33,220 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:23:34,267 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:24:01,089 - Mensagem agendada: 📉 O Bitcoin caiu R$ 113.811,14 desde sua compra!
+Preço atual: R$ 457.422,00
+📉 Prejuízo estimado: R$ 100,27
+Pode ser hora de comprar.
+2025-12-01 15:24:35,421 - Gráfico não gerado: histórico insuficiente.
+2025-12-01 15:25:37,077 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-01 15:26:38,455 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-01 15:27:40,174 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-01 15:28:41,551 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-01 15:29:42,944 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:07:05,694 - Servidor Flask iniciado...
+2025-12-05 11:07:12,314 - Servidor Flask iniciado...
+2025-12-05 11:07:20,676 - Gráfico não gerado: histórico insuficiente.
+2025-12-05 11:07:30,524 - Monitoramento iniciado.
+2025-12-05 11:07:30,526 - Gráfico não gerado: histórico insuficiente.
+2025-12-05 11:08:10,454 - Gráfico não gerado: histórico insuficiente.
+2025-12-05 11:09:01,410 - Mensagem agendada: 📉 O Bitcoin caiu R$ 89.450,14 desde sua compra!
+Preço atual: R$ 481.783,00
+📉 Prejuízo estimado: R$ 78,81
+Pode ser hora de comprar.
+2025-12-05 11:09:11,934 - Gráfico não gerado: histórico insuficiente.
+2025-12-05 11:10:13,997 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:11:15,969 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:12:18,092 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:13:19,731 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:14:22,005 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:15:23,826 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:16:25,893 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:17:28,227 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:18:30,049 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:19:32,064 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:20:33,894 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:21:35,876 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:22:37,903 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:23:40,037 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:24:00,562 - Mensagem agendada: 🔽 Tendência de queda detectada: 8 ou mais quedas consecutivas.
+Preço atual: R$ 481.119,00
+📉 Prejuízo estimado: R$ 79,39
+2025-12-05 11:24:42,051 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:25:43,767 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:26:45,724 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:27:47,796 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:28:49,804 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:29:51,814 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:30:53,773 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:31:55,839 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:32:58,725 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:34:00,574 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:35:02,506 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:36:04,451 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:37:06,343 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:38:08,152 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:39:10,075 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:40:12,166 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:41:14,060 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:42:16,125 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:43:18,201 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:44:20,191 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:45:22,026 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:46:23,893 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 11:47:35,654 - Erro ao obter preço do BTC: ('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))
+2025-12-05 11:47:36,229 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 11:48:47,274 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 11:50:56,614 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=bitcoin&vs_currencies=brl (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FBB95D9A90>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-05 11:52:08,951 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 11:53:19,716 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 12:03:01,800 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=bitcoin&vs_currencies=brl (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FBB95DA210>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-05 12:03:23,618 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=bitcoin&vs_currencies=brl (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FBB95DA5D0>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-05 12:03:52,596 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:04:57,734 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:05:13,904 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 12:06:09,653 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 12:06:25,473 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 12:17:01,960 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:18:03,374 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:19:10,043 - Erro ao obter preço do BTC: ('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))
+2025-12-05 12:20:05,825 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:21:07,207 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:22:08,799 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:23:13,266 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:24:14,535 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:25:16,985 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:26:18,074 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:27:20,591 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:28:21,855 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:29:23,067 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:30:24,492 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:31:25,773 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:32:26,946 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:33:28,240 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:34:30,025 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:35:31,606 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:36:32,884 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:37:34,784 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:38:36,241 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:39:37,466 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:40:38,627 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:41:41,682 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:42:43,050 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:43:47,328 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:43:48,170 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 12:44:49,239 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:45:50,696 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:46:51,794 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:47:52,966 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:48:54,388 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:49:55,551 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:50:59,878 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:52:00,922 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:53:01,937 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:54:03,005 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:55:04,174 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:56:05,334 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:57:09,341 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:58:10,639 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 12:59:11,818 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:00:13,042 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:01:14,383 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:02:15,401 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:03:16,357 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:04:17,911 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:05:19,098 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:06:20,171 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:07:22,297 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:08:23,245 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:09:24,350 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:10:25,408 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:11:26,604 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:12:27,619 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:13:28,582 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:14:29,561 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:15:30,696 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:16:31,818 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:17:33,272 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:18:34,641 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:19:35,771 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:20:37,068 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:21:38,339 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:42:16,121 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=bitcoin&vs_currencies=brl (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FBB70BC410>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-05 13:42:22,494 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=bitcoin&vs_currencies=brl (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FBB997D590>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-05 13:42:39,669 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=bitcoin&vs_currencies=brl (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FBB997DBD0>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-12-05 13:42:52,602 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:43:53,662 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:44:54,866 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:45:57,596 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:47:09,314 - Erro ao obter preço do BTC: HTTPSConnectionPool(host='api.coingecko.com', port=443): Read timed out. (read timeout=10)
+2025-12-05 13:47:23,439 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:48:30,506 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:49:38,212 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:50:40,169 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:51:46,467 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:52:50,623 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:53:53,808 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:54:55,255 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:55:57,639 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:56:59,816 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:58:01,299 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 13:59:04,578 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:00:14,667 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:01:16,262 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:02:18,655 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:03:23,092 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:04:28,576 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:04:49,023 - Erro ao obter preço do BTC: ('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))
+2025-12-05 14:05:41,639 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:06:48,449 - Gráfico gerado com sucesso em: static\variacao.png
+2025-12-05 14:07:21,879 - Servidor Flask iniciado...

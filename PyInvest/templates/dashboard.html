@@ -1,26 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | PyInvest</title>
+</head>
 <body>
-  <h2>Dashboard de Ações</h2>
 
-  <table border="1">
+<h2>Dashboard de Ações</h2>
+
+<p>
+    Usuário logado: <strong>{{ current_user.id }}</strong>
+    {% if current_user.is_admin %}
+        (Admin)
+    {% endif %}
+</p>
+
+<a href="{{ url_for('auth.logout') }}">Sair</a>
+
+<br><br>
+
+<table border="1" cellpadding="6">
     <tr>
-      <th>Ticker</th>
-      <th>Preço</th>
-      <th>P/L</th>
-      <th>ROE</th>
+        <th>Ticker</th>
+        <th>Preço</th>
+        <th>P/L</th>
+        <th>ROE</th>
+        <th>Score</th>
+        <th>Status</th>
     </tr>
 
     {% for s in stocks %}
     <tr>
-      <td>{{ s.ticker }}</td>
-      <td>{{ s.price }}</td>
-      <td>{{ s.pl }}</td>
-      <td>{{ s.roe }}</td>
+        <td>{{ s.ticker }}</td>
+        <td>{{ s.price }}</td>
+        <td>{{ s.pl }}</td>
+        <td>{{ s.roe }}</td>
+        <td>{{ s.score }}</td>
+        <td>{{ s.status }}</td>
     </tr>
     {% endfor %}
-  </table>
+</table>
 
-  <a href="/logout">Sair</a>
+{% if current_user.is_admin %}
+<hr>
+<h3>Admin</h3>
+<p>Reset de senha (padrão: 123)</p>
+
+<ul>
+    {% for user in users %}
+        <li>
+            {{ user.id }} -
+            <a href="{{ url_for('auth.reset_password', username=user.id) }}">
+                Resetar senha
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
 </body>
 </html>

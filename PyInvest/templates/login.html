@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | PyInvest</title>
+</head>
 <body>
-  <h2>Login</h2>
-  <form method="post">
-    <input name="username" placeholder="Usuário">
-    <input name="password" type="password" placeholder="Senha">
-    <button>Entrar</button>
-  </form>
+
+<h2>Login - PyInvest</h2>
+
+<form method="post">
+    <label>Usuário:</label><br>
+    <input type="text" name="username" required><br><br>
+
+    <label>Senha:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <button type="submit">Entrar</button>
+</form>
+
+<p>
+    Não tem conta?
+    <a href="{{ url_for('auth.register') }}">Cadastrar</a>
+</p>
+
 </body>
 </html>

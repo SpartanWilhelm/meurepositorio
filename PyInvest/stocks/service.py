@@ -1,49 +1,43 @@
 from flask import Blueprint, render_template
 from flask_login import login_required
-import yfinance as yf
-import configparser
 
-from stocks.score import calcular_score
+from stocks.data.csv_loader import list_available_tickers, load_stock_csv
+from stocks.data.yahoo import get_raw_data
+from stocks.fundamentals import calcular_fundamentos_csv
+from stocks.decision import score_barsi, status_final
 
 stocks_bp = Blueprint("stocks", __name__)
 
-def fmt_percent(valor):
-    return f"{valor * 100:.2f}%" if isinstance(valor, (int, float)) else "N/A"
-
-def fmt_number(valor):
-    return f"{valor:.2f}" if isinstance(valor, (int, float)) else "N/A"
 
 @stocks_bp.route("/")
 @login_required
 def dashboard():
-    config = configparser.ConfigParser()
-    config.read("config.ini")
-
     resultados = []
 
-    for t in config["STOCKS"]["tickers"].split(","):
-        ticker = t.strip()
-        stock = yf.Ticker(ticker)
-        info = stock.info or {}
+    tickers = list_available_tickers()
 
-        pl = info.get("trailingPE")
-        roe = info.get("returnOnEquity")
+    for ticker in tickers:
+        # CSV (fundamentos)
+        df = load_stock_csv(ticker)
+        fund = calcular_fundamentos_csv(df)
 
-        score = calcular_score(info)
+        # Yahoo (preço)
+        price = None
+        try:
+            yahoo = get_raw_data(ticker)
+            price = yahoo.get("price")
+        except Exception:
+            price = None
+
+        score = score_barsi(fund, ticker)
+        status = status_final(score)
 
         resultados.append({
             "ticker": ticker,
-            "price": fmt_number(info.get("currentPrice")),
-            "pl": fmt_number(pl),
-            "roe": fmt_percent(roe),
+            "price": round(price, 2) if price else None,
+            **fund,
             "score": score,
-            "status": (
-                "Excelente" if score >= 75 else
-                "Boa" if score >= 50 else
-                "Fraca"
-            )
+            "status": status
         })
-
-    resultados.sort(key=lambda x: x["score"], reverse=True)
 
     return render_template("dashboard.html", stocks=resultados)

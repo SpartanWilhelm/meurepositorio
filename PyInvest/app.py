@@ -7,11 +7,13 @@ from database import db
 from auth.models import User
 
 login_manager = LoginManager()
-migrate = Migrate()   # 👈 SEM app aqui
+migrate = Migrate()
+
 
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
+
 
 def create_app():
     app = Flask(__name__)
@@ -27,7 +29,7 @@ def create_app():
     # Init extensions
     db.init_app(app)
     login_manager.init_app(app)
-    migrate.init_app(app, db)  # 👈 AQUI é o lugar certo
+    migrate.init_app(app, db)
 
     login_manager.login_view = "auth.login"
 
@@ -39,6 +41,7 @@ def create_app():
     app.register_blueprint(stocks_bp)
 
     return app
+
 
 app = create_app()
 

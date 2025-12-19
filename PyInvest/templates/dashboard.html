@@ -2,29 +2,34 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard | PyInvest</title>
+    <title>Decisor de Compra</title>
 </head>
 <body>
 
-<h2>Dashboard de Ações</h2>
-
-<p>
+<!-- 🔐 Barra superior simples -->
+<div>
     Usuário logado: <strong>{{ current_user.id }}</strong>
-    {% if current_user.is_admin %}
-        (Admin)
-    {% endif %}
-</p>
+    |
+    <a href="{{ url_for('auth.logout') }}">Sair</a>
+</div>
 
-<a href="{{ url_for('auth.logout') }}">Sair</a>
+<hr>
 
-<br><br>
+<h2>Decisor de Compra – Score Barsi</h2>
 
 <table border="1" cellpadding="6">
     <tr>
         <th>Ticker</th>
-        <th>Preço</th>
+        <th>Preço Atual</th>
         <th>P/L</th>
+        <th>P/L Médio</th>
+        <th>DY</th>
+        <th>DY Médio</th>
+        <th>Payout</th>
         <th>ROE</th>
+        <th>ROIC</th>
+        <th>Dívida / EBITDA</th>
+        <th>Anos c/ Dividendos</th>
         <th>Score</th>
         <th>Status</th>
     </tr>
@@ -32,31 +37,21 @@
     {% for s in stocks %}
     <tr>
         <td>{{ s.ticker }}</td>
-        <td>{{ s.price }}</td>
+        <td>{{ s.price if s.price else "N/A" }}</td>
         <td>{{ s.pl }}</td>
-        <td>{{ s.roe }}</td>
-        <td>{{ s.score }}</td>
-        <td>{{ s.status }}</td>
+        <td>{{ "%.2f"|format(s.pl_medio) if s.pl_medio else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.dy * 100) if s.dy else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.dy_medio * 100) if s.dy_medio else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.payout * 100) if s.payout else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.roe * 100) if s.roe else "N/A" }}</td>
+        <td>{{ "%.2f%%"|format(s.roic * 100) if s.roic else "N/A" }}</td>
+        <td>{{ s.divida_ebitda if s.divida_ebitda is not none else "N/A" }}</td>
+        <td>{{ s.anos_dividendos }}</td>
+        <td><strong>{{ s.score }}</strong></td>
+        <td><strong>{{ s.status }}</strong></td>
     </tr>
     {% endfor %}
 </table>
-
-{% if current_user.is_admin %}
-<hr>
-<h3>Admin</h3>
-<p>Reset de senha (padrão: 123)</p>
-
-<ul>
-    {% for user in users %}
-        <li>
-            {{ user.id }} -
-            <a href="{{ url_for('auth.reset_password', username=user.id) }}">
-                Resetar senha
-            </a>
-        </li>
-    {% endfor %}
-</ul>
-{% endif %}
 
 </body>
 </html>

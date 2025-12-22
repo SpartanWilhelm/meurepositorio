@@ -68,17 +68,29 @@ def color_roic(roic):
     return "red"
 
 
-def color_divida(divida, setor=None):
-    if not divida or setor == "banco":
-        return None
+def color_divida(divida, setor):
+    # Bancos / seguradoras não usam Dívida / EBITDA
+    if setor in ["banco", "seguro"]:
+        return "neutral"
 
-    limite = 3.5 if setor == "energia" else 2.5
+    if divida is None:
+        return "neutral"
 
-    if divida <= limite:
+    try:
+        # Corrige string com vírgula
+        if isinstance(divida, str):
+            divida = divida.replace(",", ".")
+        divida = float(divida)
+    except Exception:
+        return "neutral"
+
+    if divida <= 2.5:
         return "green"
-    elif divida <= limite + 1:
+    elif divida <= 3.5:
         return "yellow"
-    return "red"
+    else:
+        return "red"
+
 
 
 def color_dividendos(anos):

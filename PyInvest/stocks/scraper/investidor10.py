@@ -1,76 +1,76 @@
-import requests
-from bs4 import BeautifulSoup
+import re
+import time
+import pyperclip
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+MAPA_INDICADORES = {
+    "P/L": "PL",
+    "DIVIDEND YIELD (DY)": "DY",
+    "PAYOUT": "PAYOUT",
+    "ROE": "ROE",
+    "ROIC": "ROIC",
+    "DÍVIDA LÍQUIDA / EBITDA": "DIVIDA_EBITDA",
+}
 
 
-def _to_float(text):
+def _normalizar(valor: str) -> str:
+    return (
+        valor.replace("%", "")
+             .replace(".", "")
+             .replace(",", ".")
+             .strip()
+    )
+
+
+def scrape_investidor10(tickers: list[str], output_dir: str):
     """
-    Converte valores brasileiros:
-    '14,69%' -> 0.1469
-    '5,16'   -> 5.16
-    '-%'     -> None
+    Faz scraping do Investidor10 e salva CSVs por ticker.
     """
-    if not text:
-        return None
+    driver = webdriver.Chrome()
 
-    text = text.strip()
+    for ticker in tickers:
+        print(f"🔎 Scraping {ticker}")
+        url = f"https://investidor10.com.br/acoes/{ticker.lower()}"
+        driver.get(url)
+        time.sleep(6)
 
-    if text in ["-%", "-"]:
-        return None
+        body = driver.find_element("tag name", "body")
+        body.send_keys(Keys.CONTROL, "a")
+        body.send_keys(Keys.CONTROL, "c")
+        time.sleep(1)
 
-    text = text.replace("%", "").replace(".", "").replace(",", ".")
+        linhas = [
+            l.strip()
+            for l in pyperclip.paste().splitlines()
+            if l.strip()
+        ]
 
-    try:
-        return float(text)
-    except ValueError:
-        return None
-
-
-def scrape_investidor10(ticker: str) -> dict:
-    url = f"https://investidor10.com.br/acoes/{ticker.lower()}/"
-    headers = {
-        "User-Agent": "Mozilla/5.0"
-    }
-
-    response = requests.get(url, headers=headers, timeout=10)
-
-    if response.status_code != 200:
-        return {"error": "Falha ao acessar Investidor10"}
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    table = soup.find("table", id="table-indicators-history")
-    if not table:
-        return {"error": "Tabela não encontrada"}
-
-    data = {}
-
-    for row in table.find_all("tr"):
-        indicator_td = row.find("td", class_="indicator")
-        value_td = row.find("td", class_="value")
-
-        if not indicator_td or not value_td:
+        try:
+            ini = next(i for i, l in enumerate(linhas)
+                       if "HISTÓRICO DE INDICADORES FUNDAMENTALISTAS" in l)
+            fim = next(i for i, l in enumerate(linhas[ini:], start=ini)
+                       if "Já tem" in l)
+        except StopIteration:
+            print(f"⚠️ Histórico não encontrado: {ticker}")
             continue
 
-        name = indicator_td.get_text(strip=True).upper()
-        value_text = value_td.get_text(strip=True)
+        bloco = linhas[ini:fim]
+        dados = {}
 
-        # Mapeamento dos indicadores que você usa no app
-        if "P/L" == name:
-            data["pl"] = _to_float(value_text)
+        for i, linha in enumerate(bloco[:-1]):
+            for nome_site, nome_csv in MAPA_INDICADORES.items():
+                if nome_site in linha.upper():
+                    valores = re.findall(r"-?\d+,\d+%?", bloco[i + 1])
+                    dados[nome_csv] = [_normalizar(v) for v in valores[:6]]
+                    break
 
-        elif "DIVIDEND YIELD" in name:
-            data["dy"] = _to_float(value_text)
+        path = f"{output_dir}/{ticker}.csv"
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("indicador;atual;2024;2023;2022;2021;2020\n")
+            for ind, vals in dados.items():
+                f.write(ind + ";" + ";".join(vals) + "\n")
 
-        elif "PAYOUT" in name:
-            data["payout"] = _to_float(value_text) / 100 if value_text else None
+        print(f"✅ CSV salvo: {path}")
 
-        elif name == "ROE":
-            data["roe"] = _to_float(value_text) / 100 if value_text else None
-
-        elif name == "ROIC":
-            data["roic"] = _to_float(value_text) / 100 if value_text else None
-
-        elif "DÍVIDA LÍQUIDA / EBITDA" in name:
-            data["divida_ebitda"] = _to_float(value_text)
-
-    return data
+    driver.quit()

@@ -1,41 +1,75 @@
 import pandas as pd
+import numpy as np
 
 
-def media_5a(df, indicador):
+def _get_value(df, indicador, coluna="Atual"):
     """
-    Calcula média dos últimos 5 anos ignorando valores inválidos
+    Retorna valor float do indicador na coluna desejada.
     """
     try:
-        valores = df.loc[indicador, ["2024", "2023", "2022", "2021", "2020"]]
-        valores = pd.to_numeric(valores, errors="coerce")
-        return round(valores.mean(), 2)
+        value = df.loc[indicador, coluna]
+        if pd.isna(value):
+            return None
+        return float(value)
+    except Exception:
+        return None
+
+
+def _get_media(df, indicador, anos=("2024", "2023", "2022", "2021", "2020")):
+    """
+    Calcula média histórica ignorando NaN.
+    """
+    try:
+        serie = df.loc[indicador, list(anos)]
+        serie = pd.to_numeric(serie, errors="coerce")
+        if serie.dropna().empty:
+            return None
+        return float(serie.mean())
     except Exception:
         return None
 
 
 def calcular_fundamentos_csv(df):
-    def val(ind):
-        try:
-            v = df.loc[ind, "Atual"]
-            return float(v) if pd.notna(v) else None
-        except Exception:
-            return None
+    """
+    Lê o CSV exatamente no formato do Investidor10 exportado.
+    """
+
+    # Garantia mínima
+    df = df.copy()
+    df.index = df.index.astype(str).str.strip().str.upper()
 
     fundamentos = {
-        "pl": val("PL"),
-        "pl_medio": media_5a(df, "PL"),
-        "dy": val("DY"),
-        "dy_medio": media_5a(df, "DY"),
-        "payout": val("PAYOUT"),
-        "roe": val("ROE"),
-        "roic": val("ROIC"),
-        "divida_ebitda": val("DIV_LIQ_EBITDA"),
-        "anos_dividendos": int(
-            pd.to_numeric(
-                df.loc["DY", ["2024", "2023", "2022", "2021", "2020"]],
-                errors="coerce"
-            ).count()
-        )
+        # P/L
+        "pl": _get_value(df, "PL"),
+        "pl_medio": _get_media(df, "PL"),
+
+        # Dividend Yield
+        "dy": _get_value(df, "DY"),
+        "dy_medio": _get_media(df, "DY"),
+
+        # Payout
+        "payout": _get_value(df, "PAYOUT"),
+
+        # Rentabilidade
+        "roe": _get_value(df, "ROE"),
+        "roic": _get_value(df, "ROIC"),
+
+        # Dívida / EBITDA
+        "divida_ebitda": (
+            _get_value(df, "DIVIDA_LIQUIDA_EBITDA")
+            or _get_value(df, "DIVIDA_LIQ_EBITDA")
+            or _get_value(df, "DÍVIDA LÍQUIDA / EBITDA")
+            or _get_value(df, "EV_EBITDA")
+
+        ),
+
+        # Histórico (placeholder simples por enquanto)
+        "anos_dividendos": 5,
     }
+
+    # Normalização: tudo que é percentual → decimal
+    for key in ["dy", "dy_medio", "payout", "roe", "roic"]:
+        if fundamentos[key] is not None:
+            fundamentos[key] = fundamentos[key] / 100
 
     return fundamentos

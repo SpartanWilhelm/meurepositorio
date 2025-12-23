@@ -10,7 +10,7 @@ from stocks.indicators import (
     color_roe, color_roic, color_divida, color_dividendos
 )
 from stocks.price_analysis import analisar_preco
-from stocks.scraper.investidor10 import scrape_investidor10
+
 
 stocks_bp = Blueprint("stocks", __name__)
 
@@ -20,54 +20,21 @@ stocks_bp = Blueprint("stocks", __name__)
 def dashboard():
     resultados = []
 
-    tickers = list_available_tickers()
-
-    for ticker in tickers:
-        # -----------------------------
-        # Fundamentais (CSV)
-        # -----------------------------
+    for ticker in list_available_tickers():
         df = load_stock_csv(ticker)
         fund = calcular_fundamentos_csv(df)
 
-        # -----------------------------
-        # Complemento via Investidor10
-        # -----------------------------
-        scraped = scrape_investidor10(ticker)
-
-        # Fallback seguro
-        fund["pl"] = fund["pl"] or scraped.get("pl")
-        fund["dy"] = fund["dy"] or scraped.get("dy")
-        fund["payout"] = fund["payout"] or scraped.get("payout")
-        fund["roe"] = fund["roe"] or scraped.get("roe")
-        fund["roic"] = fund["roic"] or scraped.get("roic")
-        fund["divida_ebitda"] = fund["divida_ebitda"] or scraped.get("divida_ebitda")
-
-        # -----------------------------
-        # Preço atual (Yahoo)
-        # -----------------------------
         yahoo = get_raw_data(ticker)
         price = yahoo.get("price")
 
-        # -----------------------------
-        # Camada 1 — Preço (timing)
-        # -----------------------------
         price_info = analisar_preco(ticker)
 
-        # -----------------------------
-        # Setor
-        # -----------------------------
         setor = SETORES.get(ticker, "outros")
         is_commodity = setor == "commodity"
 
-        # -----------------------------
-        # Score Barsi
-        # -----------------------------
         score = score_barsi(fund, ticker)
         status = status_final(score)
 
-        # -----------------------------
-        # Cores dos indicadores
-        # -----------------------------
         colors = {
             "price": price_info["price_color"],
             "pl": color_pl(fund["pl"], fund["pl_medio"]),

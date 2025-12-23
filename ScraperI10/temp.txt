@@ -11,34 +11,34 @@ Mais
 3
 HOME
  Ações
- Utilidade Pública
- CPFE3
-CPFE3 - Cpfl Energia
-CPFE3
-CPFL ENERGIA
-Indicadores CPFL ENERGIA
+ Telecomunicações
+ TIMS3
+TIMS3 - Tim
+TIMS3
+TIM
+Indicadores TIM
 INDICADORES
-Indicadores CPFL ENERGIA
+Indicadores TIM
 COTAÇÃO
-Indicadores CPFL ENERGIA
+Indicadores TIM
 EMPRESA
-Indicadores CPFL ENERGIA
+Indicadores TIM
 CONTÁBIL
 
 next
 
 Cotação
-R$ 51,15
+R$ 21,40
 VARIAÇÃO (12M)
-75,54% Logo CPFL ENERGIA
+61,62% Logo TIM
 P/L
-10,70
+12,80
 P/VP
-2,57
+2,05
 DY
-5,57%
+12,89%
 graph
-COTAÇÃO CPFE3
+COTAÇÃO TIMS3
 1 dia
 7 dias
 30 dias
@@ -48,9 +48,9 @@ YTD
 5 anos
 10 anos
 BVMF
-CPFE3
-R$ 51,13
-+ 68,59% (1 ano)
+TIMS3
+R$ 21,39
++ 63,04% (1 ano)
 ReaisDólaresEuro
 
 Se você tivesse investido
@@ -60,11 +60,11 @@ há
 1 ano
 
 hoje você teria
-R$ 1.685,92
+R$ 1.630,39
 *
 *O valor considera o reinvestimento dos dividendos.
 
-Rentabilidade de CPFE3
+Rentabilidade de TIMS3
 1 mês
 3 meses
 1 ano
@@ -72,24 +72,24 @@ Rentabilidade de CPFE3
 5 anos
 10 anos
 rentabilidade
-6,61%
-29,57%
-68,59%
-53,59%
-153,55%
-491,74%
+-9,94%
+-3,32%
+63,04%
+43,02%
+99,50%
+372,20%
 rentabilidade real
 
 rentabilidade menos a inflação.
 
-6,61%
-29,22%
-62,23%
-40,98%
-91,07%
-260,32%
+-9,94%
+-3,58%
+56,89%
+31,28%
+50,34%
+187,53%
 RETORNO DO INVESTIMENTO
-PREÇO JUSTO DO ATIVO CPFE3 SEGUNDO FÓRMULA DE BENJAMIN GRAHAM 
+PREÇO JUSTO DO ATIVO TIMS3 SEGUNDO FÓRMULA DE BENJAMIN GRAHAM 
 O Preço Justo de Graham
 A fórmula do Preço Justo foi criada por Benjamin Graham para identificar ações com potencial de valorização ou que estão sendo negociadas por menos do que valem. Graham foi um dos maiores investidores da história e mentor de Warren Buffet.
 
@@ -105,144 +105,144 @@ Por considerar o valor patrimonial em seu cálculo, a fórmula não funciona bem
 
 Isso não é uma recomendação de compra/venda, o cálculo do valor justo leva em conta somente a fórmula criada por Benjamin Graham, difundida no livro Investidor Inteligente. Saiba mais.
 statistics
-INDICADORES FUNDAMENTALISTAS CPFE3
-CONFIRA os fundamentos das ações CPFE3
+INDICADORES FUNDAMENTALISTAS TIMS3
+CONFIRA os fundamentos das ações TIMS3
 
 
 P/L
-10,70
+12,80
 P/RECEITA (PSR)
-1,31
+1,96
 P/VP
-2,57
-DIVIDEND YIELD - CPFE3
-5,57%
+2,05
+DIVIDEND YIELD - TIMS3
+12,89%
 PAYOUT
-72,16%
+86,37%
 MARGEM LÍQUIDA
-12,25%
+15,30%
 MARGEM BRUTA
-31,43%
+53,44%
 MARGEM EBIT
-24,61%
+23,24%
 MARGEM EBITDA
-29,58%
+49,92%
 EV/EBITDA
-6,17
+3,64
 EV/EBIT
-7,41
+7,83
 P/EBITDA
-4,43
+3,92
 P/EBIT
-5,32
+8,43
 P/ATIVO
-0,71
+0,90
 P/CAP.GIRO
-573,24
+-87,03
 P/ATIVO CIRC LIQ
--0,91
+-1,19
 VPA
-19,67
+10,54
 LPA
-4,73
+1,68
 GIRO ATIVOS
-0,54
+0,46
 ROE
-24,04%
+15,98%
 ROIC
-16,51%
+21,10%
 ROA
-6,98%
+7,02%
 DÍVIDA LÍQUIDA / PATRIMÔNIO
-1,01
+-0,15
 DÍVIDA LÍQUIDA / EBITDA
-1,74
+-0,28
 DÍVIDA LÍQUIDA / EBIT
-2,09
+-0,60
 DÍVIDA BRUTA / PATRIMÔNIO
-1,27
+0,11
 PATRIMÔNIO / ATIVOS
-0,27
+0,44
 PASSIVOS / ATIVOS
-0,71
+0,56
 LIQUIDEZ CORRENTE
-1,01
+0,96
 CAGR RECEITAS 5 ANOS
-7,56%
+8,81%
 CAGR LUCROS 5 ANOS
-9,18%
+16,92%
 statistics
-HISTÓRICO DE INDICADORES FUNDAMENTALISTAS CPFE3
+HISTÓRICO DE INDICADORES FUNDAMENTALISTAS TIMS3
 5 ANOS
 10 ANOS
  	Atual	2024	2023	2022	2021	2020
 P/L 
-10,70	6,67	8,03	7,50	6,51	10,29
+12,80	10,98	15,12	17,75	10,64	83,02
 P/RECEITA (PSR) 
-1,31	0,85	1,12	0,97	0,79	1,21
+1,96	1,36	1,80	1,38	2,23	2,03
 P/VP 
-2,57	1,76	2,35	2,35	2,04	2,69
+2,05	1,31	1,65	1,17	1,25	1,51
 DIVIDEND YIELD (DY) 
-5,57%	8,72%	7,49%	9,77%	13,80%	5,53%
+12,89%	7,88%	5,07%	4,66%	3,29%	3,75%
 PAYOUT 
-72,16%	58,14%	60,16%	73,26%	89,83%	56,96%
+86,37%	86,69%	78,20%	74,54%	35,78%	263,70%
 MARGEM LÍQUIDA 
-12,25%	12,80%	13,91%	12,96%	12,11%	11,79%
+15,30%	12,39%	11,90%	7,76%	20,99%	2,44%
 MARGEM BRUTA 
-31,43%	31,83%	34,33%	30,08%	23,61%	22,40%
+53,44%	53,26%	51,62%	50,51%	68,23%	53,69%
 MARGEM EBIT 
-24,61%	25,41%	26,62%	26,00%	18,89%	16,55%
+23,24%	21,64%	19,79%	14,68%	26,65%	16,30%
 MARGEM EBITDA 
-29,58%	30,62%	32,28%	31,16%	23,36%	21,94%
+49,92%	49,25%	49,65%	46,39%	67,04%	48,31%
 EV/EBITDA 
-6,17	4,72	5,09	4,81	5,52	7,46
+3,64	2,55	3,52	2,99	4,62	4,85
 EV/EBIT 
-7,41	5,69	6,17	5,77	6,82	9,89
+7,83	5,81	8,82	9,46	11,63	14,39
 P/EBITDA 
-4,43	2,79	3,46	3,12	3,38	5,53
+3,92	2,76	3,62	2,97	3,33	4,20
 P/EBIT 
-5,32	3,36	4,19	3,74	4,17	7,33
+8,43	6,29	9,09	9,39	8,37	12,45
 P/ATIVO 
-0,71	0,47	0,59	0,54	0,47	0,76
+0,90	0,61	0,78	0,53	0,63	0,84
 P/CAP.GIRO 
-573,24	-44,44	-25,94	127,15	11,72	-63,11
+-87,03	-210,80	-29,01	-10,77	6,57	16,61
 P/ATIVO CIRC LIQ 
--0,91	-0,60	-0,78	-0,68	-0,61	-1,06
+-1,19	-0,79	-0,98	-0,64	-0,91	-1,12
 VPA 
-19,67	17,99	16,38	14,11	13,14	12,09
+10,54	11,04	10,88	10,62	10,50	9,69
 LPA 
-4,73	4,74	4,80	4,43	4,12	3,16
+1,68	1,32	1,19	0,70	1,24	0,18
 GIRO ATIVOS 
-0,54	0,55	0,53	0,55	0,59	0,63
+0,46	0,45	0,43	0,38	0,28	0,41
 ROE 
-24,04%	26,33%	29,28%	31,37%	31,35%	26,14%
+15,98%	11,94%	10,90%	6,58%	11,78%	1,82%
 ROIC 
-16,51%	17,17%	17,86%	19,53%	15,03%	12,26%
+21,10%	17,68%	14,67%	10,24%	9,67%	7,97%
 ROA 
-6,98%	7,47%	7,39%	7,34%	7,34%	7,55%
+7,02%	5,60%	5,13%	2,96%	5,94%	4,43%
 DÍVIDA LÍQUIDA / EBITDA 
-1,74	1,93	1,63	1,69	2,14	1,93
+-0,28	-0,21	-0,11	0,02	1,29	0,65
 DÍVIDA LÍQUIDA / EBIT 
-2,09	2,33	1,98	2,03	2,65	2,56
+-0,60	-0,48	-0,27	0,07	3,25	1,94
 DÍVIDA BRUTA / PATRIMÔNIO 
-1,27	1,39	1,40	1,56	1,48	1,35
+0,11	0,11	0,14	0,20	0,49	0,44
 PATRIMÔNIO / ATIVOS 
-0,27	0,27	0,25	0,23	0,23	0,28
+0,44	0,47	0,47	0,45	0,50	0,56
 PASSIVOS / ATIVOS 
-0,71	0,72	0,73	0,75	0,75	0,71
+0,56	0,53	0,53	0,55	0,50	0,44
 LIQUIDEZ CORRENTE 
-1,01	0,95	0,91	1,02	1,20	0,96
+0,96	0,99	0,89	0,79	1,45	1,25
 CAGR RECEITAS 5 ANOS 
-7,56%	7,33%	7,15%	8,03%	15,46%	8,87%
+8,81%	7,93%	7,01%	5,81%	-2,03%	0,15%
 CAGR LUCROS 5 ANOS 
-9,18%	15,96%	20,65%	33,23%	40,74%	33,47%
+16,92%	-2,73%	2,19%	6,24%	31,56%	-2,30%
 
 
-Já tem CPFE3 na sua carteira?
+Já tem TIMS3 na sua carteira?
 Gerencie seus investimentos pelo Investidor10.
-adicionar CPFE3
+adicionar TIMS3
 Checklist do Investidor Buy And Hold
-Checklist do investidor buy and hold sobre CPFE3
+Checklist do investidor buy and hold sobre TIMS3
 
 Empresa com mais de 5 anos de Bolsa 
 
@@ -267,26 +267,26 @@ Empresa é bem avaliada pelos usuários do Investidor10
 VER RANKING DE BUY AND HOLD
  Esta ferramenta de checklist é fornecida apenas para fins informativos e não constitui recomendação de investimento. A pontuação baseia-se em parâmetros de mercado, mas não garante resultados futuros. Para entender como funciona o sistema de pontuação, clique aqui .
 graph
-Histórico de Dividendos - CPFE3
+Histórico de Dividendos - TIMS3
 
 5 ANOS
 10 ANOS
-DY atual: 5,57%
-DY médio em 5 anos: 9,06%
+DY atual: 12,89%
+DY médio em 5 anos: 4,93%
 tipo
 data com
 pagamento
 valor
-Dividendos	29/04/2025	19/11/2025	0,60750400
-Dividendos	29/04/2025	25/08/2025	0,32110900
-Dividendos	29/04/2025	25/06/2025	0,78107700
-Dividendos	29/04/2025	25/07/2025	0,43393100
-Dividendos	29/04/2025	27/10/2025	0,17357200
-Dividendos	29/04/2025	25/09/2025	0,21696500
-Dividendos	29/04/2025	15/12/2025	0,26001400
-Dividendos	26/04/2024	26/12/2024	0,61903147
-Dividendos	26/04/2024	13/05/2024	1,19765214
-Dividendos	26/04/2024	28/06/2024	0,37318147
+JSCP	22/12/2025	30/06/2026	0,17557600
+Dividendos	19/12/2025	30/12/2025	0,74828838
+JSCP	26/09/2025	21/01/2026	0,19954524
+JSCP	25/07/2025	21/10/2025	0,13231510
+JSCP	21/05/2025	23/07/2025	0,12408485 
+Dividendos	03/04/2025	23/07/2025	0,28225423 
+Dividendos	03/04/2025	21/10/2025	0,28266700 
+Dividendos	03/04/2025	22/04/2025	0,28225423 
+JSCP	31/03/2025	30/06/2026	0,20249600 
+JSCP	17/02/2025	22/04/2025	0,08262404 
 Anterior.
 1
 2
@@ -294,11 +294,12 @@ Anterior.
 4
 5
 6
+7
 Próximo.
-RADAR DE DIVIDENDOS INTELIGENTE PARA CPFE3 
+RADAR DE DIVIDENDOS INTELIGENTE PARA TIMS3 
 
-CPFE3
-Com base no histórico de proventos da CPFE3, o Radar de Dividendos Inteligente projeta quais os possíveis meses de pagamentos de proventos no futuro.
+TIMS3
+Com base no histórico de proventos da TIMS3, o Radar de Dividendos Inteligente projeta quais os possíveis meses de pagamentos de proventos no futuro.
 
 Data Com
 Data Pagamento
@@ -316,12 +317,12 @@ Nov
 Dez
 VER RADAR COMPLETO
 graph
-Payout de CPFL ENERGIA 
+Payout de TIM 
 5 ANOS
 10 ANOS
 MAX.
 RETORNO DO INVESTIMENTO
-PREÇO TETO DO ATIVO CPFE3 SEGUNDO O MÉTODO BAZIN 
+PREÇO TETO DO ATIVO TIMS3 SEGUNDO O MÉTODO BAZIN 
 O Preço-teto de Bazin
 Décio Bazin foi um renomado investidor, reconhecido por sua estratégia vencedora de focar em empresas pagadoras de dividendos. Sua fórmula estabelece o preço máximo a ser pago por uma ação, com base nos dividendos que a empresa distribui.
 
@@ -343,66 +344,57 @@ COMPARADOR DE AÇÕES
 P/L	P/VP	ROE	DY	Valor de
 Mercado	Margem
 Líquida
-Logo CPFL ENERGIA
-CPFE3
-10,70	2,57	24,04%	5,57%	R$ 58,29 B	12,25%
-Logo Axia Energia
-AXIA3
--24,09	1,33	-5,51%	12,79%	R$ 145,26 B	-14,11%
-Logo EQUATORIAL ENERGIA
-EQTL3
-14,28	1,68	11,78%	5,96%	R$ 48,01 B	6,56%
-Logo NEOENERGIA
-NEOE3
-8,90	1,08	12,18%	1,76%	R$ 39,22 B	8,58%
-Logo ENEVA
-ENEV3
-1.130,76	1,94	0,17%	0,00%	R$ 38,49 B	0,20%
-Logo ENGIE BRASIL
-EGIE3
-11,67	2,88	24,66%	6,09%	R$ 35,41 B	23,87%
-Logo Companhia Energética de Minas Gerais
-CMIG4
-7,87	1,10	13,99%	16,72%	R$ 34,50 B	9,47%
-Logo ENERGISA
-ENGI11
-7,12	1,27	17,86%	7,81%	R$ 25,11 B	9,24%
-Logo Isa Energia Brasil
-ISAE4
-6,24	0,87	13,99%	11,11%	R$ 19,86 B	32,78%
-Logo REDE ENERGIA
-REDE3
-11,32	3,85	34,03%	9,87%	R$ 16,03 B	7,28%
-Logo Taesa
-TAEE11
-8,12	1,83	22,53%	8,01%	R$ 13,96 B	38,18%
-Logo EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.
-EQPA3
-7,98	2,59	32,49%	11,52%	R$ 13,16 B	13,85%
+Logo TIM
+TIMS3
+12,80	2,05	15,98%	12,89%	R$ 51,57 B	15,30%
+Logo VIVO - TELEFÔNICA BRASIL
+VIVT3
+17,45	1,54	8,85%	4,02%	R$ 105,67 B	10,34%
+Logo Eletromidia
+ELMD3
+39,74	4,53	11,40%	0,64%	R$ 4,46 B	8,95%
+Logo Intelbras
+INTB3
+8,12	1,22	15,01%	12,15%	R$ 3,85 B	10,34%
+Logo Unifique
+FIQE3
+10,38	1,60	15,46%	5,63%	R$ 2,04 B	17,41%
+Logo TELEBRAS
+TELB3
+20,79	0,76	3,68%	0,00%	R$ 1,11 B	12,16%
+Logo ALLIED
+ALLD3
+2,23	0,47	20,88%	8,90%	R$ 787,08 M	6,55%
+Logo WDC Networkings
+WDCN3
+-250,22	0,27	-0,11%	7,06%	R$ 172,65 M	-0,08%
+Logo Infracommerce
+IFCM3
+-0,70	0,46	-65,71%	0,00%	R$ 156,69 M	-26,31%
 
 COMPARAÇÃO DETALHADAnext
 
 graph
-COMPARAÇÃO DE CPFE3 COM ÍNDICES 
+COMPARAÇÃO DE TIMS3 COM ÍNDICES 
 2 anos
 5 anos
 10 anos
 Se você tivesse investido R$ 1.000,00
-CPFE3 R$ 1.000,00 em CPFE3 você teria R$ 2.535,50
+TIMS3 R$ 1.000,00 em TIMS3 você teria R$ 1.995,00
 
-IBOV R$ 1.000,00 em IBOV você teria R$ 1.361,30
+IBOV R$ 1.000,00 em IBOV você teria R$ 1.360,10
 
 CDI R$ 1.000,00 em CDI você teria R$ 1.663,00
 
 IPCA R$ 1.000,00 em IPCA você teria R$ 1.327,00
 
-SMLL R$ 1.000,00 em SMLL você teria R$ 826,40
+SMLL R$ 1.000,00 em SMLL você teria R$ 823,80
 
-IFIX R$ 1.000,00 em IFIX você teria R$ 1.325,00
+IFIX R$ 1.000,00 em IFIX você teria R$ 1.326,10
 
-IDIV R$ 1.000,00 em IDIV você teria R$ 1.693,80
+IDIV R$ 1.000,00 em IDIV você teria R$ 1.691,90
 
-IVVB11 R$ 1.000,00 em IVVB11 você teria R$ 2.094,60
+IVVB11 R$ 1.000,00 em IVVB11 você teria R$ 2.093,70
 
 *O valor considera o reinvestimento dos dividendos.
 Descubra as Melhores Ações para o Investidor Buy And Hold
@@ -458,159 +450,159 @@ Desbloquear
 DY
 66.76%
 Var. (12m)
--26,79%
+-26,74%
 
 ATIVO
 Desbloquear
 DY
 36.17%
 Var. (12m)
-37,28%
+36,53%
 
 
 Ver todos os ativos
 Desbloquear todos os dados
 
-SOBRE A EMPRESA CPFL ENERGIA
-CPFL ENERGIA
+SOBRE A EMPRESA TIM
+TIM
 Média de avaliações dos usuários:
 
 Avalie
 Seguir 
 SOBRE A EMPRESA
-A CPFL Energia é uma empresa brasileira do setor de utilidade pública e subsetor energia elétrica de com atuação focada na geração, transmissão, distribuição e comercialização.
+A TIM S.A. é uma empresa brasileira no setor de telecomunicações, atuando no subsetor telecomunicações. 
 
-Seus principais produtos e serviços incluem a distribuição de energia para residências e empresas, geração a partir de fontes renováveis e não renováveis, e a comercialização de energia para clientes de grande porte.
+A companhia possui uma ampla gama de serviços, incluindo telefonia móvel e fixa, acesso à internet via modem, tablet, celular, e banda larga fixa, consolidando-se como uma das líderes no segmento de tecnologia 4G no Brasil.
 
-A CPFL atua em todas as cinco regiões do Brasil, fornecendo energia a aproximadamente 10 milhões de clientes em 687 municípios, o que representa uma participação de 14% do mercado nacional de distribuição.
+Pioneira no lançamento de inovações como a tarifação diária para voz e internet e o pagamento de planos via cartão de crédito, a empresa também possui parcerias e conexões de cobertura e roaming internacional.
 
-Além de sua forte presença nacional, a empresa é controlada pela State Grid Corporation of China (SGCC), que possui 83,71% do capital social, consolidando a presença do grupo chinês no mercado brasileiro de energia.
+Responsável pela introdução da tecnologia 4G no Brasil, a companhia foi a primeira a realizar tarifação diária para voz e internet. 
 
-Um dos fatores relevantes da CPFL é sua capacidade de 4.035 MW, se destacando como a terceira maior geradora privada do país.
+Contando com um total de 9.691 colaboradores, a empresa mantém uma rede de lojas próprias e pontos de venda espalhados por todas as regiões do Brasil. 
 
-Sua estrutura de geração inclui usinas hidrelétricas, parques eólicos e sistemas de biomassa, o que fortalece seu compromisso com a sustentabilidade e o uso de fontes de energia limpa.
+A TIM é parte do Grupo Telecom Itália, que começou suas operações no Brasil em 1998, marcando uma presença importante no mercado de telecomunicações. 
 
-Uma das principais empresas do setor de energia elétrica listadas no Novo Mercado da B3, suas ações são negociadas sob o ticker CPFE3, e o mercado fracionário CPFE3F
+A empresa opera como uma large cap com cobertura nacional e um sólido plano de crescimento que integra tecnologia avançada e melhorias contínuas nos serviços.
 
-História e quando foi criada a CPFL Energia
-A CPFL Energia foi fundada em 1912 como resultado da fusão de várias companhias regionais, incluindo a Força e Luz de Botucatu e a Companhia Elétrica do Oeste de São Paulo.
+A TIM está listada na B3 com ações ordinárias sob o código TIMS3, também negociadas no mercado fracionário como TIMS3F.  
 
-Inicialmente fortaleceu sua infraestrutura e redes de distribuição, atraindo a atenção da American & Foreign Power (Amforp), que assumiria seu controle em 1927 permanecendo até 1964, quando foi adquirida pela Eletrobrás.
+História e quando foi criada a TIM
+A TIM iniciou suas atividades no Brasil em julho de 1995 após a separação das operações de telefonia fixa e móvel da Telecom Italia. 
 
-Ao longo das décadas, a CPFL se expandiu, passando a ser controlada pela CESP (atual AURE3) em 1975. 
+Em 1998, o consórcio Maxitel, formado por UGB Participações Ltda. e Bitel Participações S.A., adquiriu as operadoras Tele Celular Sul e Tele Nordeste Celular no processo de privatização da Telebrás.
 
-E no ano de 1986, a CPFL se tornou pioneira ao firmar contratos de compra de energia de biomassa, reforçando seu compromisso com fontes renováveis.
+Em 2000, a TIM comprou a totalidade da Maxitel, detendo 96,6% das ações, e em 2002, a Anatel aprovou essa aquisição. 
 
-Tempos depois ocorreu sua privatização, em 1997, quando o governo de São Paulo transferiu o controle para o grupo VBC Energia, em parceria com Previ e Bonaire Participações. 
+No ano seguinte, a TIM Nordeste e TIM Sul investiram R$ 152,8 milhões na melhoria da rede GSM, alcançando 4 milhões de clientes em 2003. Nesse mesmo ano, as empresas foram incorporadas sob o nome TIM Participações S.A..
 
-Em 2002, foi criada a holding CPFL Brasil, que organizou as operações da companhia, e, em 2004, a empresa lançou suas ações na B3 e na NYSE, consolidando seu capital.
+Em 2004, a TIM consolidou suas operações com a incorporação das subsidiárias TIM Nordeste e TIM Sul.
 
-Já nos anos seguintes, a State Grid adquiriu o controle acionário da CPFL, realizando novos investimentos e a consolidando como uma das maiores holdings de energia no país.
+Em 2005, a TIM Participações formalizou a proposta de integrar todas as suas operações no Brasil. A empresa entrou no Novo Mercado da B3 em 2011, destacando-se por seu compromisso com boas práticas de governança corporativa.
 
-Em 2021, a CPFL adquiriu a CEEE-T, aumentando sua atuação em transmissão e seguindo com a estratégia em expansão de energias renováveis, eficiência e redução de perdas. 
+Desde 2010, a TIM enfrentou vários desafios regulatórios, recebendo multas por questões relacionadas à qualidade do serviço e ao descumprimento de metas estabelecidas pela Anatel. 
 
-Em 2024, após ajustes na estrutura organizacional, a Presidência se despediu do então líder Carlos Zamboni, no cargo há 13 anos e na companhia há 36 anos. 
+Em 2015, a Proteste entrou com uma ação civil pública contra várias operadoras, incluindo a TIM, devido à má qualidade da internet banda larga.
 
+Até 2024, a TIM continua investindo em tecnologia e inovação, com foco na expansão do 5G e na melhoria contínua da experiência do cliente, posicionando-se como um dos principais players no setor de telecomunicações no Brasil.
 
 Informações Complementares
-A empresa CPFL ENERGIA, está listada na B3 com um valor de mercado de R$ 58,29 Bilhões , tendo um patrimônio de R$ 22,67 Bilhões.
+A empresa TIM, está listada na B3 com um valor de mercado de R$ 51,57 Bilhões , tendo um patrimônio de R$ 25,21 Bilhões.
 
-Com um total de 13.439 funcionários, a empresa está listada na Bolsa de Valores no setor de Utilidade Pública e no segmento Energia Elétrica.
+Com um total de 9.691 funcionários, a empresa está listada na Bolsa de Valores no setor de Telecomunicações e no segmento Telecomunicações.
 
-Nos últimos 12 meses a empresa teve um faturamento de R$ 44,48 Bilhões, que gerou um lucro no valor de R$ 5,75 Bilhões.
+Nos últimos 12 meses a empresa teve um faturamento de R$ 26,34 Bilhões, que gerou um lucro no valor de R$ 4,03 Bilhões.
 
-Quanto aos seus principais indicadores, a empresa possui um P/L de 10,70, um P/VP de 2,57 e nos últimos 12 meses o dividend yeld da CPFL ENERGIA ficou em 5,57% .
+Quanto aos seus principais indicadores, a empresa possui um P/L de 12,80, um P/VP de 2,05 e nos últimos 12 meses o dividend yeld da TIM ficou em 12,89% .
 
 LEIA MAIS
 *Isso não é uma recomendação de compra/venda.
 
 DADOS SOBRE A EMPRESA
-Nome da Empresa:	CPFL ENERGIA
-CNPJ:	02.429.144/0001-93
-Ano de estreia na bolsa:	2000
-Número de funcionários:	13.439
+Nome da Empresa:	TIM
+CNPJ:	02.421.421/0001-11
+Ano de estreia na bolsa:	1998
+Número de funcionários:	9.691
 Ano de fundação:	1998
 Papéis da empresa:
-CPFE3
+TIMS3
 Papéis Fracionados:
-CPFE3F
+TIMS3F
 
 INFORMAÇÕES SOBRE A EMPRESA
 
 Valor de mercado
-R$ 58,29 Bilhões
+R$ 51,57 Bilhões
 Valor de firma
-R$ 81,16 Bilhões
+R$ 47,90 Bilhões
 Patrimônio Líquido
-R$ 22,67 Bilhões
+R$ 25,21 Bilhões
 Nº total de papeis
-1,15 Bilhão
+2,39 Bilhões
 Ativos
-R$ 82,45 Bilhões
+R$ 57,37 Bilhões
 Ativo Circulante
-R$ 18,52 Bilhões
+R$ 14,09 Bilhões
 Dívida Bruta
-R$ 28,76 Bilhões
+R$ 2,85 Bilhões
 Dívida Líquida
-R$ 22,87 Bilhões
+R$ -3,67 Bilhões
 Disponibilidade
-R$ 5,89 Bilhões
+R$ 6,53 Bilhões
 Segmento de Listagem
 Novo Mercado
 Free Float
-16,29%
+33,40%
 Tag Along
 100,00%
 Liquidez Média Diária
-R$ 104,27 Milhões
+R$ 147,04 Milhões
 Setor
-Utilidade Pública
+Telecomunicações
 Segmento
-Energia Elétrica
+Telecomunicações
 Cotação
-Regiões onde CPFL ENERGIA gera receita
+Regiões onde TIM gera receita
 
-2024
+2025
 Brasil
 
-R$ 9,66 Bilhões
+R$ 6,39 Bilhões
 
 100%
 Total (trimestral)
-R$ 9,66 Bilhões
+R$ 6,39 Bilhões
 Cotação
-negócios que geram receita para CPFL ENERGIA
+negócios que geram receita para TIM
 
-2024
-Distribuição
+2025
+Serviço Móvel
 
-R$ 8,03 Bilhões
+R$ 5,92 Bilhões
 
-83%
-Geração
+93%
+Serviço Fixo
 
-R$ 1,08 Bilhão
-
-11%
-Comercialização
-
-R$ 504,35 Milhões
+R$ 318,42 Milhões
 
 5%
+Produtos
+
+R$ 152,82 Milhões
+
+2%
 Outros
 
-R$ 49,28 Milhões
+R$ 1,28 Milhão
 
-1%
+0%
 Total (trimestral)
-R$ 9,66 Bilhões
+R$ 6,39 Bilhões
 
-POSIÇÃO ACIONÁRIA DA CPFE3
+POSIÇÃO ACIONÁRIA DA TIMS3
 Acionista	% ON	% PN	% Total
-State Grid Brazil Power Participações S.A.	63.39	0.00	63.39
-ESC Energia S.A.	20.32	0.00	20.32
-Outros	16.29	0.00	16.29
-Ações Tesouraria	0.00	0.00	0.00
+TIM Brasil Serviços e Participações S.A.	66.59	0.00	66.59
+Outros	33.40	0.00	33.40
+Ações Tesouraria	0.01	0.00	0.01
 O Melhor Curso para o Investidor de Longo Prazo
 iniciar curso
 Analisando os múltiplos
@@ -633,157 +625,157 @@ Receitas e Lucros
 10 ANOS
 MÁX.
 
-LUCRO X COTAÇÃO - CPFE3
+LUCRO X COTAÇÃO - TIMS3
 promotion
-Resultados CPFL ENERGIA
+Resultados TIM
 
 
 
 
 #	ÚLT. 12M	2024	2023	2022	2021	2020
 Receita Líquida - (R$)	
-44,48 Bilhões
-42,63 Bilhões
-39,74 Bilhões
-39,35 Bilhões
-39,21 Bilhões
-30,90 Bilhões
+26,34 Bilhões
+25,45 Bilhões
+23,83 Bilhões
+21,53 Bilhões
+14,09 Bilhões
+17,27 Bilhões
 Custos - (R$)	
--30,50 Bilhões
--29,06 Bilhões
--26,10 Bilhões
--27,52 Bilhões
--29,95 Bilhões
--23,98 Bilhões
+-12,26 Bilhões
+-11,89 Bilhões
+-11,53 Bilhões
+-10,66 Bilhões
+-8,44 Bilhões
+-8,00 Bilhões
 Lucro Bruto - (R$)	
-13,98 Bilhões
-13,57 Bilhões
-13,64 Bilhões
-11,84 Bilhões
-9,26 Bilhões
-6,92 Bilhões
+14,07 Bilhões
+13,55 Bilhões
+12,30 Bilhões
+10,87 Bilhões
+9,62 Bilhões
+9,27 Bilhões
 Lucro Líquido - (R$)	
-5,75 Bilhões
-5,76 Bilhões
-5,54 Bilhões
-5,22 Bilhões
-4,85 Bilhões
-3,71 Bilhões
+4,03 Bilhões
+3,15 Bilhões
+2,84 Bilhões
+1,67 Bilhão
+2,96 Bilhões
+1,84 Bilhão
 EBITDA - (R$)	
-13,16 Bilhões
-13,05 Bilhões
-12,83 Bilhões
-12,26 Bilhões
-9,16 Bilhões
-6,78 Bilhões
+13,15 Bilhões
+12,53 Bilhões
+11,83 Bilhões
+9,99 Bilhões
+9,45 Bilhões
+8,34 Bilhões
 EBIT - (R$)	
-10,95 Bilhões
-10,83 Bilhões
-10,58 Bilhões
-10,23 Bilhões
-7,41 Bilhões
-5,11 Bilhões
+6,12 Bilhões
+5,51 Bilhões
+4,72 Bilhões
+3,16 Bilhões
+3,76 Bilhões
+2,81 Bilhões
 Imposto - (R$)	
--2,45 Bilhões
--2,33 Bilhões
--2,49 Bilhões
--2,10 Bilhões
--1,76 Bilhão
--1,09 Bilhão
+-197,63 Milhões
+-301,90 Milhões
+-347,06 Milhões
+-50,49 Milhões
+-146,05 Milhões
+-163,96 Milhões
 Dívida Bruta - (R$)	
-28,76 Bilhões
-28,79 Bilhões
-26,44 Bilhões
-25,38 Bilhões
-22,42 Bilhões
-18,87 Bilhões
+2,85 Bilhões
+3,04 Bilhões
+3,77 Bilhões
+4,97 Bilhões
+12,22 Bilhões
+10,10 Bilhões
 Dívida Líquida - (R$)	
-22,87 Bilhões
-25,24 Bilhões
-20,90 Bilhões
-20,78 Bilhões
-19,63 Bilhões
-13,08 Bilhões
-Margem Bruta - (%)	31,43 %	31,83 %	34,33 %	30,08 %	23,61 %	22,40 %
-Margem Ebitda - (%)	29,58 %	30,62 %	32,28 %	31,16 %	23,36 %	21,94 %
-Margem Líquida - (%)	12,25 %	12,80 %	13,91 %	12,96 %	12,11 %	11,79 %
-ROE - (%)	24,04 %	26,33 %	29,28 %	31,37 %	31,35 %	26,14 %
-ROIC - (%)	16,51 %	17,17 %	17,86 %	19,53 %	15,03 %	12,26 %
+-3,67 Bilhões
+-2,66 Bilhões
+-1,27 Bilhão
+230,48 Milhões
+-	
+5,45 Bilhões
+Margem Bruta - (%)	53,44 %	53,26 %	51,62 %	50,51 %	68,23 %	53,69 %
+Margem Ebitda - (%)	49,92 %	49,25 %	49,65 %	46,39 %	67,04 %	48,31 %
+Margem Líquida - (%)	15,30 %	12,39 %	11,90 %	7,76 %	20,99 %	2,44 %
+ROE - (%)	15,98 %	11,94 %	10,90 %	6,58 %	11,78 %	1,82 %
+ROIC - (%)	21,10 %	17,68 %	14,67 %	10,24 %	9,67 %	7,97 %
 boss
-EVOLUÇÃO DO PATRIMÔNIO - CPFL ENERGIA
+EVOLUÇÃO DO PATRIMÔNIO - TIM
 5 ANOS
 10 ANOS
 MAX.
 patrimonial
-BALANÇO PATRIMONIAL CPFL ENERGIA
+BALANÇO PATRIMONIAL TIM
 
 
 
 #	2024	2023	2022	2021	2020
 Ativo Total - (R$)	
-77,13 Bilhões
-74,97 Bilhões
-71,15 Bilhões
-66,12 Bilhões
-49,11 Bilhões
+56,33 Bilhões
+55,26 Bilhões
+56,41 Bilhões
+49,82 Bilhões
+41,65 Bilhões
 Ativo Circulante - (R$)	
-16,55 Bilhões
-18,05 Bilhões
-15,18 Bilhões
-15,55 Bilhões
-13,81 Bilhões
+12,66 Bilhões
+11,40 Bilhões
+10,36 Bilhões
+15,40 Bilhões
+10,41 Bilhões
 Ativo Não Circulante - (R$)	
-60,58 Bilhões
-56,92 Bilhões
-55,97 Bilhões
-50,57 Bilhões
-35,30 Bilhões
+43,66 Bilhões
+43,86 Bilhões
+46,04 Bilhões
+34,42 Bilhões
+31,24 Bilhões
  	 	 	 	 	 
 Passivo Total - (R$)	
-77,13 Bilhões
-74,97 Bilhões
-71,15 Bilhões
-66,12 Bilhões
-49,11 Bilhões
+56,33 Bilhões
+55,26 Bilhões
+56,41 Bilhões
+49,82 Bilhões
+41,65 Bilhões
 Passivo Circulante - (R$)	
-17,37 Bilhões
-19,76 Bilhões
-14,88 Bilhões
-12,91 Bilhões
-14,41 Bilhões
+12,83 Bilhões
+12,88 Bilhões
+13,12 Bilhões
+10,61 Bilhões
+8,30 Bilhões
 Passivo Não Circulante - (R$)	
-37,96 Bilhões
-35,21 Bilhões
-38,73 Bilhões
-36,40 Bilhões
-20,47 Bilhões
+17,10 Bilhões
+16,36 Bilhões
+17,89 Bilhões
+14,10 Bilhões
+10,17 Bilhões
 Patrimônio Líquido Consolidado - (R$)	
-21,80 Bilhões
-20,00 Bilhões
-17,54 Bilhões
-16,81 Bilhões
-14,24 Bilhões
+26,40 Bilhões
+26,02 Bilhões
+25,40 Bilhões
+25,11 Bilhões
+23,18 Bilhões
 Comunicados da Empresa
-COMUNICADOS DO CPFE3
-Oferta Pública de Distribuição de Debêntures Simples- 12ª Emissão - Anúncio de Encerramento
+COMUNICADOS DO TIMS3
+AGE - Assembleia
 
 23/12/2025
 Abrir
-Comunicação sobre Contratação de mútuo
+Início da Oferta de Distribuição Pública
 
-22/12/2025
+20/12/2025
 Abrir
-Início da oferta pública de distribuição da 12ª emissão de debêntures simples
+Emissão de Valores Mobiliários
 
-19/12/2025
+13/12/2025
+Abrir
+Aviso ao mercado da 3ª Emissão de Debêntures da TIM Brasil Serviços e Participações S.A.
+
+13/12/2025
 Abrir
 AGE - Assembleia
 
-12/12/2025
-Abrir
-Fato Relevante - Alteração de Controle Acionário
-
-06/12/2025
+13/12/2025
 Abrir
 Anterior
 1
@@ -792,21 +784,19 @@ Anterior
 4
 5
 6
-...
-21
-22
+7
 Próxima
 Notícias
-Últimas notícias sobre cpfl-energia
-(Imagem: Shutterstock)
+Últimas notícias sobre tim
+Data com ou data de corte é a data limite para garantir o provento de uma empresa (Imagem: Shutterstock)
 Mercado
-Quais setores da B3 devem pagar mais dividendos no começo de 2026?
-Rede de energia elétrica de São Paulo é uma das maiores da América Latina (Imagem: Reprodução)
-Negócios
-Empresa da B3 surge como favorita para substituir a Enel em SP; veja quem é
-Com a economia desacelerando, o mercado aposta em queda forte da Selic em 2026 (Imagem: Shutterstock)
+Dividendos: Petrobras (PETR4) e mais 25 empresas têm "data com" na semana
+Dividendos são distribuídos regularmente como forma de remunerar acionistas (Imagem: Shutterstock)
 Mercado
-SANB11 e BPAC11 alçam IBOV de volta aos 162 mil pontos; veja motivo
+Mais de 25 empresas liberam R$ 13 bilhões em dividendos na semana; veja como receber
+LOGG3 está na lista (Imagem: Shutterstock)
+Mercado
+Estas ações na B3 ainda vão pagar dividendos e/ou JCP em 2025; veja a lista
 Ver Mais
 Discussãochat-box
 
@@ -816,65 +806,50 @@ ENTRAR
 ouCADASTRE-SE
 
 user
-José Rocha
-29 de Setembro de 2025
-sera que vai voltar a casa dos 33 ,vejo que ainda ha uma simetria grande entre lucro e cotação ,se vier mas resultados bons a tendencia que a cotação dispare p/ alcansar os lucros correto?
+Wendell Rodrigues
+06 de Julho de 2025
+Por que aconteceu da TIM REALIZAR DESDOBRAMENTOS E AGRUPAMENTOS? Possuo menos de 100 ações e com isto, não vejo mais em minha carteira, como revejo valores e possível retorno do valor que investi?
 
-0
+1
 
-2 RESPOSTAS
-useruser
+5 RESPOSTAS
+useruseruseruseruser
 RESPONDER
 user
-Geocadias
-12 de Agosto de 2025
-Tenho em carteira 2000 ações CMIG4, 605 ações CPFE3, 500 ações ISAE4, 1030 ações TAEE3, 1030 ações TAEE4 e 233 ações TAEE11. Pretendo ficar apenas com dois ativos (CPFE e TAEE). O que acham? Procede?
-
-0
-
-2 RESPOSTAS
-useruser
-RESPONDER
-user
-Paulo Garcia
+Vitor Souza
 03 de Julho de 2025
-a melhor ação que tenho na carteira
+não me atentei ao desdobramento e perdi minhas ações.
 
-7
+5
 
-1 RESPOSTA
-user
+4 RESPOSTAS
+useruseruseruser
 RESPONDER
 user
-José Rocha
-21 de Setembro de 2025
-pra min a melhor eletrica da bolsa tem um seguimento completo em todas as areas
-DISTRIBUIÇÃO GERAÇÃO TRANSMISSÃO E COMERCIALIZAÇÃO
-e por ser uma eletrica divida baixa isso é bom
+Marcos Junio
+23 de Julho de 2025
+Até agora nada do valor cair na conta daquela agrupamento!não dão valor ao pequeno acionista!e agora lançaram data com para voltar a força compradora!
 
-2
+1
 
-1 RESPOSTA
-user
+2 RESPOSTAS
+useruser
 RESPONDER
 user
-Gabriel
-18 de Agosto de 2025
-Olá, comecei a investir esse mês.. ja tenho estudado a uns 5 meses, e esse mês comecei a montar a carteira.. que já esta 95% concluida.
+Vinicius Moraes
+06 de Julho de 2025
+Perdi todas com o desdobramento, uma pena...
 
-Alguma sugestão?
+0
 
-https://investidor10.com.br/wallet/public/1888316
-
-2
-
-1 RESPOSTA
-user
+2 RESPOSTAS
+useruser
 RESPONDER
 user
-Cesar Lima
-11 de Julho de 2025
-Qual o preço teto desta ação?
+Felipe Porto
+14 de Outubro de 2025
+A ação da empresa está caríssima! Basta olhar is indicadores basicos como, PL de 15x , P/VP de 2,17 e VPA de10,38, muito abaixo do valor da cota. Caro demais !
+Se você fizer uma conta básica dividindo o último dividendo pago pelo valor da cota, vai dar um Divided yield de 5,06 %, ou seja, uma mērd@ kkk . Não bate nem a inflação. O valor justo por essa ação seria de R$ 10,38
 
 1
 
@@ -882,115 +857,127 @@ Qual o preço teto desta ação?
 user
 RESPONDER
 user
-Raimundo Silva
-26 de Setembro de 2025
-Defensividade com Expansão em Renováveis
+Felipe Porto
+14 de Outubro de 2025
+A ação da empresa está caríssima! Basta olhar is indicadores basicos como, PL de 15x , P/VP de 2,17 e VPA de10,38, muito abaixo do valor da cota. Caro demais !
+Se você fizer uma conta básica dividindo o último dividendo pago pelo valor da cota, vai dar um Divided yield de 5,06 %, ou seja, uma mērd@ kkk . Não bate nem a inflação. O valor justo por essa ação seria de R$ 10,38
 
-"A CPFL Energia (CPFE3) representa um dos pilares defensivos para uma carteira de dividendos, graças à sua receita recorrente e política consistente de remuneração. O que mais chama a atenção, porém, é sua estratégia de verticalização e forte exposição às energias renováveis através de sua subsidiária, posicionando-se bem para as tendências ESG.
+1
 
-O grande desafio, comum ao setor, continua sendo a regulação. A pergunta que fica é: os próximos reajustes tarifários serão suficientes para cobrir os custos elevados do cenário hidrológico desfavorável? Apesar disso, a gestão sólida e o backing da State Grid passam confiança para o longo prazo."
-
-7
+1 RESPOSTA
+user
 RESPONDER
 user
-Júlio Xavier
-18 de Agosto de 2025
-Tô entre, cpfe3, cmig4, neoe3 e taee4, já tenho taee4 na minha carteira e preciso de mais umas. Tô pensando em ficar com cmig4 e neoe4, o que acha?
-
-7
-RESPONDER
-user
-Alma Negra
-14 de Dezembro de 2025
-E esse free float ?
-Qual a pegadinha ?
+Jonathan Aroca
+07 de Novembro de 2025
+Boa noite, Alguém poderia avaliar e da a sua opinião sincera sobre a minha carteira de investimento, por favor!
 
 0
+
+1 RESPOSTA
+user
 RESPONDER
 user
-Roberto Baia
-05 de Dezembro de 2025
-Pessoal, tudo bem? 👋📊
+Celio Mendonça
+28 de Julho de 2025
+engraçado, na minha corretora tenho 100 cotas, num total de 1.984,00,
+lancei os valores aqui no Investidor10 , no entando ainda consta as 100% mas com uma desvalorização de 98,38%, isso está derrubando minha rentabilidade. Não sou um expert, alguem pode me explicar o que vai acontecer ?
 
-Recentemente concluí um curso chamado Investidor de Verdade. Já deixo claro: não estou aqui para vender nada, até porque sou apenas aluno. Só faço questão de citar a referência porque foi de lá que tirei muitos conceitos que estou aplicando na construção da minha carteira.
+0
 
-Comecei meus investimentos agora em 2025, montando uma carteira com visão de longo prazo, entre 10 e 15 anos. E justamente por ser um caminho de aprendizado contínuo, quero abrir espaço aqui para trocar experiências.
+1 RESPOSTA
+user
+RESPONDER
+user
+Pinve
+10 de Julho de 2025
+Fiquei com minha carteira cheia de DTS da Tim 00000.
 
-Quero muito ouvir comentários, sugestões e opiniões sobre minha carteira. A ideia é crescermos juntos, aprendendo com diferentes visões e estratégias. 💬🚀
+0
 
-📌 Observação importante:
-Eu tenho um título do Tesouro IPCA+ 2065, mas ele está na carteira apenas para marcações a mercado. Ele não faz parte da metodologia do curso, é apenas uma escolha pessoal para diversificação e estudo.
-
-Se puderem, deem uma olhada e compartilhem seus pontos de vista. Vamos construir conhecimento e fortalecer nossas estratégias ao longo desse ciclo de longo prazo! 🔥📈
-https://investidor10.com.br/wallet/public/2192047
+1 RESPOSTA
+user
+RESPONDER
+user
+Felipe Santos
+25 de Novembro de 2025
+telefonia apesar de fazer parte do acrônimo BESST, as telefonias não estão honrando com a teoria.. primeiro foi a OI que deu preju intenso e faliu; a vivo e tim subiu demais ultrapassando preços justo e teto; a tim fez agrupamento, não vi e perdi as ações, graças a Deus devolveram o que gastei nas poucas ações... até o momento não invisto em telefonia, mas tem uma empresa de tecnologia chamada ALLIED que está voando baixo, esta sim vale a pena.
 
 0
 RESPONDER
 Ver mais comentários
 Dúvidas comuns
-Qual a cotação de CPFL ENERGIA (CPFE3) hoje?
-A cotação de CPFL ENERGIA (CPFE3) hoje está em R$ 51,15, com uma variação de 75,54% em relação aos últimos 12 meses. A cotação de CPFL ENERGIA (CPFE3) iniciou o ano negociando na casa dos R$ 31,59 e hoje está em R$ 51,15. Acompanhe o gráfico de cotação em tempo real, a cotação histórica de CPFL ENERGIA (CPFE3) e dados de ações do Ibovespa e mercados internacionais.
+Qual a cotação de TIM (TIMS3) hoje?
+A cotação de TIM (TIMS3) hoje está em R$ 21,40, com uma variação de 61,62% em relação aos últimos 12 meses. A cotação de TIM (TIMS3) iniciou o ano negociando na casa dos R$ 14,48 e hoje está em R$ 21,40. Acompanhe o gráfico de cotação em tempo real, a cotação histórica de TIM (TIMS3) e dados de ações do Ibovespa e mercados internacionais.
 
-Quando CPFL ENERGIA (CPFE3) paga dividendos?
-CPFL ENERGIA (CPFE3) vale a pena?
-Como comprar ações de CPFL ENERGIA (CPFE3)?
-Quanto rende 100 ações de CPFL ENERGIA (CPFE3) hoje?
+Quando TIM (TIMS3) paga dividendos?
+TIM (TIMS3) vale a pena?
+Como comprar ações de TIM (TIMS3)?
+Quanto rende 100 ações de TIM (TIMS3) hoje?
 Empresas Relacionadas
-Logo NEOENERGIA
-NEOE3 - NEOENERGIA
-P/L: 8,90
-P/VP: 1,08
+Logo VIVO - TELEFÔNICA BRASIL
+VIVT3 - VIVO - TELEFÔNICA BRASIL
+P/L: 17,45
+P/VP: 1,54
 
-DY: 1,76%
-ROE: 12,18%
+DY: 4,02%
+ROE: 8,85%
 
-Logo EQUATORIAL ENERGIA
-EQTL3 - EQUATORIAL ENERGIA
-P/L: 14,28
-P/VP: 1,68
+Logo ALLIED
+ALLD3 - ALLIED
+P/L: 2,23
+P/VP: 0,47
 
-DY: 5,96%
-ROE: 11,78%
+DY: 8,90%
+ROE: 20,88%
 
-Logo Axia Energia
-AXIA3 - Axia Energia
-P/L: -24,09
-P/VP: 1,33
+Logo Intelbras
+INTB3 - Intelbras
+P/L: 8,12
+P/VP: 1,22
 
-DY: 12,79%
-ROE: -5,51%
+DY: 12,15%
+ROE: 15,01%
 
-Logo Cemig
-CMIG4 - Cemig
-P/L: 7,87
-P/VP: 1,10
+Logo Eletromidia
+ELMD3 - Eletromidia
+P/L: 39,74
+P/VP: 4,53
 
-DY: 16,72%
-ROE: 13,99%
+DY: 0,64%
+ROE: 11,40%
 
-Logo ENERGISA
-ENGI11 - ENERGISA
-P/L: 7,12
-P/VP: 1,27
+Logo Unifique
+FIQE3 - Unifique
+P/L: 10,38
+P/VP: 1,60
 
-DY: 7,81%
-ROE: 17,86%
+DY: 5,63%
+ROE: 15,46%
 
-Logo REDE ENERGIA
-REDE3 - REDE ENERGIA
-P/L: 11,32
-P/VP: 3,85
+Logo Livetech da Bahia
+WDCN3 - Livetech da Bahia
+P/L: -250,22
+P/VP: 0,27
 
-DY: 9,87%
-ROE: 34,03%
+DY: 7,06%
+ROE: -0,11%
 
-Logo COELBA
-CEEB3 - COELBA
-P/L: 5,42
-P/VP: 1,37
+Logo Infracommerce
+IFCM3 - Infracommerce
+P/L: -0,70
+P/VP: 0,46
 
-DY: 13,77%
-ROE: 25,29%
+DY: 0,00%
+ROE: -65,71%
+
+Logo TELEBRAS
+TELB3 - TELEBRAS
+P/L: 20,79
+P/VP: 0,76
+
+DY: 0,00%
+ROE: 3,68%
 
 Nacional
 Ações
